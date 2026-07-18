@@ -8,7 +8,7 @@
  * updateSetLog persists in the background (and re-invalidates on settle).
  */
 import { useState } from 'react';
-import { Button, Chip, Sheet, TierBadge, formatShowDate, type TierId } from '@/components';
+import { Button, Chip, ScoreBubble, Sheet, formatShowDate } from '@/components';
 import { MOMENT_TAGS, MOMENT_TAG_LABELS } from '@/engine/types';
 import { updateSetLog } from '@/lib/persist';
 import { queryClient, qk } from '@/lib/queryClient';
@@ -19,18 +19,18 @@ export interface EnrichmentSheetProps {
   /** null = closed */
   row: LadderRow | null;
   rank: number | null;
-  tier: TierId | null;
+  score: number | null;
   onClose: () => void;
 }
 
 interface SheetBodyProps {
   row: LadderRow;
   rank: number | null;
-  tier: TierId | null;
+  score: number | null;
   onClose: () => void;
 }
 
-function SheetBody({ row, rank, tier, onClose }: SheetBodyProps) {
+function SheetBody({ row, rank, score, onClose }: SheetBodyProps) {
   const { userId } = useSession();
   const [moment, setMoment] = useState<MomentTag | null>(row.moment);
   const [note, setNote] = useState(row.note ?? '');
@@ -64,7 +64,7 @@ function SheetBody({ row, rank, tier, onClose }: SheetBodyProps) {
           {rank !== null && (
             <span className="text-sm font-bold tabular-nums text-ink-faint">#{rank}</span>
           )}
-          {tier && <TierBadge tier={tier} />}
+          {score !== null && <ScoreBubble score={score} size="sm" />}
         </div>
         <p className="mt-1 text-xl leading-tight font-bold text-ink">{artist}</p>
         {ev && (
@@ -118,15 +118,15 @@ function SheetBody({ row, rank, tier, onClose }: SheetBodyProps) {
   );
 }
 
-export function EnrichmentSheet({ row, rank, tier, onClose }: EnrichmentSheetProps) {
+export function EnrichmentSheet({ row, rank, score, onClose }: EnrichmentSheetProps) {
   // Retain the last non-null row so content stays visible during the exit slide.
   const [retained, setRetained] = useState<{
     row: LadderRow;
     rank: number | null;
-    tier: TierId | null;
+    score: number | null;
   } | null>(null);
-  if (row && row !== retained?.row) setRetained({ row, rank, tier });
-  const display = row ? { row, rank, tier } : retained;
+  if (row && row !== retained?.row) setRetained({ row, rank, score });
+  const display = row ? { row, rank, score } : retained;
 
   return (
     <Sheet open={row !== null} onClose={onClose}>
@@ -135,7 +135,7 @@ export function EnrichmentSheet({ row, rank, tier, onClose }: EnrichmentSheetPro
           key={display.row.id}
           row={display.row}
           rank={display.rank}
-          tier={display.tier}
+          score={display.score}
           onClose={onClose}
         />
       )}

@@ -12,10 +12,10 @@ import {
   Chip,
   EmptyState,
   Screen,
+  ScoreBubble,
   ShowCard,
-  TierBadge,
+  displayScore,
   eventToShowCardData,
-  type TierId,
 } from '@/components';
 import { MOMENT_TAG_LABELS } from '@/engine/types';
 import { SPRING } from '@/lib/motion';
@@ -83,7 +83,11 @@ export default function LadderScreen() {
   const options = useMemo(() => deriveLensOptions(rows), [rows]);
   const items = useMemo(() => {
     if (rows.length === 0) return [];
-    return buildLadderItems(toEngineLadder(rows), lens, rowById);
+    // Numeric scores, not tier sections — keep only the rows.
+    return buildLadderItems(toEngineLadder(rows), lens, rowById).filter(
+      (it): it is Extract<ReturnType<typeof buildLadderItems>[number], { kind: 'row' }> =>
+        it.kind === 'row',
+    );
   }, [rows, lens, rowById]);
 
   const activeItem = useMemo(() => {
@@ -167,48 +171,36 @@ export default function LadderScreen() {
         <LayoutGroup>
           <motion.ul layout className="pb-4">
             <AnimatePresence initial={false} mode="popLayout">
-              {items.map((item) =>
-                item.kind === 'header' ? (
-                  <motion.li
-                    key={item.key}
-                    layout
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={SPRING}
-                    className="flex items-baseline justify-between bg-bg/95 px-4 pt-5 pb-1.5"
-                  >
-                    <TierBadge tier={item.tier as TierId} size="md" />
-                    <span className="text-[10px] font-semibold tracking-wide text-ink-faint uppercase">
-                      {item.count} show{item.count === 1 ? '' : 's'}
-                    </span>
-                  </motion.li>
-                ) : (
-                  <motion.li
-                    key={item.key}
-                    layout
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -8 }}
-                    transition={SPRING}
-                  >
-                    <ShowCard
-                      variant="row"
-                      show={item.row.events ? eventToShowCardData(item.row.events) : fallbackCard()}
-                      rank={item.row.rank_pos}
-                      tier={item.entry.tier as TierId}
-                      onClick={() => setActiveLogId(item.row.id)}
-                      trailing={
-                        item.row.moment ? (
+              {items.map((item) => (
+                <motion.li
+                  key={item.key}
+                  layout
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -8 }}
+                  transition={SPRING}
+                >
+                  <ShowCard
+                    variant="row"
+                    show={item.row.events ? eventToShowCardData(item.row.events) : fallbackCard()}
+                    rank={item.row.rank_pos}
+                    onClick={() => setActiveLogId(item.row.id)}
+                    trailing={
+                      <>
+                        <ScoreBubble
+                          score={displayScore(item.row.rank_pos, rows.length)}
+                          size="sm"
+                        />
+                        {item.row.moment && (
                           <Chip size="sm" disabled tabIndex={-1} className="border-accent/30">
                             {MOMENT_TAG_LABELS[item.row.moment]}
                           </Chip>
-                        ) : undefined
-                      }
-                    />
-                  </motion.li>
-                ),
-              )}
+                        )}
+                      </>
+                    }
+                  />
+                </motion.li>
+              ))}
             </AnimatePresence>
           </motion.ul>
         </LayoutGroup>
@@ -217,7 +209,7 @@ export default function LadderScreen() {
       <EnrichmentSheet
         row={activeItem?.row ?? null}
         rank={activeItem?.row.rank_pos ?? null}
-        tier={(activeItem?.entry?.tier as TierId | undefined) ?? null}
+        score={activeItem ? displayScore(activeItem.row.rank_pos, rows.length) : null}
         onClose={() => setActiveLogId(null)}
       />
     </Screen>
