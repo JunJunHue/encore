@@ -1,0 +1,194 @@
+[
+  {
+    "slug": "basement",
+    "name": "Basement",
+    "neighborhood": "Ridgewood",
+    "borough": "Queens",
+    "capacityTier": "club",
+    "capacity": 400
+  },
+  {
+    "slug": "nowadays",
+    "name": "Nowadays",
+    "neighborhood": "Ridgewood",
+    "borough": "Queens",
+    "capacityTier": "club",
+    "capacity": 600
+  },
+  {
+    "slug": "good-room",
+    "name": "Good Room",
+    "neighborhood": "Greenpoint",
+    "borough": "Brooklyn",
+    "capacityTier": "club",
+    "capacity": 500
+  },
+  {
+    "slug": "public-records",
+    "name": "Public Records",
+    "neighborhood": "Gowanus",
+    "borough": "Brooklyn",
+    "capacityTier": "club",
+    "capacity": 350
+  },
+  {
+    "slug": "elsewhere-hall",
+    "name": "Elsewhere (Hall)",
+    "neighborhood": "Bushwick",
+    "borough": "Brooklyn",
+    "capacityTier": "club",
+    "capacity": 675
+  },
+  {
+    "slug": "bowery-ballroom",
+    "name": "Bowery Ballroom",
+    "neighborhood": "Lower East Side",
+    "borough": "Manhattan",
+    "capacityTier": "club",
+    "capacity": 575
+  },
+  {
+    "slug": "babys-all-right",
+    "name": "Baby's All Right",
+    "neighborhood": "Williamsburg",
+    "borough": "Brooklyn",
+    "capacityTier": "club",
+    "capacity": 280
+  },
+  {
+    "slug": "blue-note",
+    "name": "Blue Note",
+    "neighborhood": "Greenwich Village",
+    "borough": "Manhattan",
+    "capacityTier": "club",
+    "capacity": 200
+  },
+  {
+    "slug": "music-hall-of-williamsburg",
+    "name": "Music Hall of Williamsburg",
+    "neighborhood": "Williamsburg",
+    "borough": "Brooklyn",
+    "capacityTier": "club",
+    "capacity": 650
+  },
+  {
+    "slug": "racket-nyc",
+    "name": "Racket NYC",
+    "neighborhood": "Chelsea",
+    "borough": "Manhattan",
+    "capacityTier": "theater",
+    "capacity": 1000
+  },
+  {
+    "slug": "webster-hall",
+    "name": "Webster Hall",
+    "neighborhood": "East Village",
+    "borough": "Manhattan",
+    "capacityTier": "theater",
+    "capacity": 1500
+  },
+  {
+    "slug": "brooklyn-steel",
+    "name": "Brooklyn Steel",
+    "neighborhood": "East Williamsburg",
+    "borough": "Brooklyn",
+    "capacityTier": "theater",
+    "capacity": 1800
+  },
+  {
+    "slug": "terminal-5",
+    "name": "Terminal 5",
+    "neighborhood": "Hell's Kitchen",
+    "borough": "Manhattan",
+    "capacityTier": "theater",
+    "capacity": 3000
+  },
+  {
+    "slug": "kings-theatre",
+    "name": "Kings Theatre",
+    "neighborhood": "Flatbush",
+    "borough": "Brooklyn",
+    "capacityTier": "theater",
+    "capacity": 3200
+  },
+  {
+    "slug": "brooklyn-paramount",
+    "name": "Brooklyn Paramount",
+    "neighborhood": "Downtown Brooklyn",
+    "borough": "Brooklyn",
+    "capacityTier": "theater",
+    "capacity": 2700
+  },
+  {
+    "slug": "radio-city-music-hall",
+    "name": "Radio City Music Hall",
+    "neighborhood": "Midtown",
+    "borough": "Manhattan",
+    "capacityTier": "arena",
+    "capacity": 6000
+  },
+  {
+    "slug": "knockdown-center",
+    "name": "Knockdown Center",
+    "neighborhood": "Maspeth",
+    "borough": "Queens",
+    "capacityTier": "theater",
+    "capacity": 3500
+  },
+  {
+    "slug": "brooklyn-mirage",
+    "name": "Brooklyn Mirage",
+    "neighborhood": "East Williamsburg",
+    "borough": "Brooklyn",
+    "capacityTier": "arena",
+    "capacity": 6000
+  },
+  {
+    "slug": "great-hall-avant-gardner",
+    "name": "The Great Hall at Avant Gardner",
+    "neighborhood": "East Williamsburg",
+    "borough": "Brooklyn",
+    "capacityTier": "theater",
+    "capacity": 3000
+  },
+  {
+    "slug": "under-the-k-bridge-park",
+    "name": "Under the K Bridge Park",
+    "neighborhood": "Greenpoint",
+    "borough": "Brooklyn",
+    "capacityTier": "arena",
+    "capacity": 10000
+  },
+  {
+    "slug": "forest-hills-stadium",
+    "name": "Forest Hills Stadium",
+    "neighborhood": "Forest Hills",
+    "borough": "Queens",
+    "capacityTier": "stadium",
+    "capacity": 13000
+  },
+  {
+    "slug": "barclays-center",
+    "name": "Barclays Center",
+    "neighborhood": "Prospect Heights",
+    "borough": "Brooklyn",
+    "capacityTier": "arena",
+    "capacity": 19000
+  },
+  {
+    "slug": "madison-square-garden",
+    "name": "Madison Square Garden",
+    "neighborhood": "Midtown",
+    "borough": "Manhattan",
+    "capacityTier": "arena",
+    "capacity": 20000
+  },
+  {
+    "slug": "ubs-arena",
+    "name": "UBS Arena",
+    "neighborhood": "Elmont",
+    "borough": "Long Island",
+    "capacityTier": "arena",
+    "capacity": 17500
+  }
+]

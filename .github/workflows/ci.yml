@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Typecheck
+        run: npx tsc -b --force
+
+      - name: Unit tests
+        run: npx vitest run
+
+      - name: Build
+        run: npx vite build
+        env:
+          VITE_SUPABASE_URL: https://ci-placeholder.supabase.co
+          VITE_SUPABASE_ANON_KEY: ci-placeholder-anon-key
+
+      - name: Detect seed/schema changes
+        id: changes
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            seed:
+              - 'seed/**'
+              - 'supabase/**'
+
+      - name: Seed pipeline builds
+        if: steps.changes.outputs.seed == 'true'
+        run: npx tsx seed/build-seed.ts

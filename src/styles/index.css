@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+
+  /* Surfaces — "venue black" */
+  --color-bg: #0b0b10;
+  --color-surface: #15151d;
+  --color-surface-2: #1c1c26;
+
+  /* Ink (text) palette */
+  --color-ink: #f4f4f8;
+  --color-ink-soft: #b3b3c2;
+  --color-ink-faint: #6f6f7e;
+
+  /* Hairline borders */
+  --color-line: rgba(255, 255, 255, 0.08);
+
+  /* Accent — stage-light violet → magenta */
+  --color-accent: #8b5cf6;
+  --color-accent-magenta: #ec4899;
+
+  /* Tier colors (design-client.md §5) */
+  --color-tier-alltimer: #ffd75e;
+  --color-tier-great: #8b5cf6;
+  --color-tier-good: #38bdf8;
+  --color-tier-fine: #64748b;
+  --color-tier-regret: #7f1d1d;
+
+  --shadow-glow: 0 0 24px rgba(139, 92, 246, 0.35);
+}
+
+html {
+  background-color: var(--color-bg);
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-bg font-sans text-ink antialiased;
+  overscroll-behavior-y: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Safe-area helpers for the notch / home indicator */
+@utility safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+@utility safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Hide scrollbars on horizontal chip rails etc. */
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

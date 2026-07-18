@@ -1,0 +1,19 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+dev-dist
+*.tsbuildinfo
+
+# Env — never commit real credentials
+.env
+.env.local
+.env.*.local
+
+# Logs / editor
+*.log
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea

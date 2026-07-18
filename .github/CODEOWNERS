@@ -1,0 +1,23 @@
+# Ownership boundaries per CONTRIBUTING.md ("How to claim a workstream").
+# Placeholder handles @collab-w1..@collab-w4 — replace with real GitHub usernames
+# in your first PR when you claim a workstream.
+
+# W1 — Ranking core (pure TS engine)
+/src/engine/               @collab-w1
+
+# W2 — Backend & data (migration, RLS, RPCs, seed pipeline)
+/supabase/                 @collab-w2
+/seed/                     @collab-w2
+
+# W3 — Log & Rank (search/log flow, pairwise UI + slot-in, onboarding)
+/src/features/log/         @collab-w3
+/src/features/rank/        @collab-w3
+/src/features/onboarding/  @collab-w3
+
+# W4 — Ladder & Social (tiers/lenses/enrichment, compare, recap)
+/src/features/ladder/      @collab-w4
+/src/features/compare/     @collab-w4
+/src/features/recap/       @collab-w4
+
+# Shared platform (src/lib, src/components, App.tsx, root configs, .github, docs):
+# intentionally unlisted — no single owner; any one other collaborator reviews.

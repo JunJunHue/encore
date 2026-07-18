@@ -1,0 +1,39 @@
+{
+  "id": "00000000-0000-4000-a000-000000000001",
+  "slug": "andrew",
+  "displayName": "Andrew",
+  "email": "demo@encore.app",
+  "password": "encore-demo-2026",
+  "tierCuts": [3, 7, 10, 13],
+  "scores": [
+    1808, 1766, 1728, 1638, 1600, 1560, 1516, 1426, 1388, 1348, 1258, 1218, 1180, 1090, 1052
+  ],
+  "ladder": [
+    "rufus-du-sol-msg-2025-10-17",
+    "anyma-brooklyn-mirage-2025-08-23",
+    "four-tet-k-bridge-2026-06-06",
+    "bicep-knockdown-center-2025-11-14",
+    "lane-8-brooklyn-mirage-2025-09-05",
+    "jamie-xx-forest-hills-2025-09-27",
+    "peggy-gou-great-hall-2026-02-14",
+    "fontaines-dc-brooklyn-steel-2025-11-21",
+    "charli-xcx-barclays-2025-10-04",
+    "jungle-brooklyn-paramount-2026-03-13",
+    "dj-koze-nowadays-2026-04-18",
+    "sammy-virji-webster-hall-2025-12-05",
+    "kaytranada-radio-city-2026-05-08",
+    "mj-lenderman-bowery-ballroom-2026-01-22",
+    "helena-hauff-basement-2025-12-12"
+  ],
+  "notes": {
+    "rufus-du-sol-msg-2025-10-17": "Innerbloom closer. Grown men crying everywhere.",
+    "four-tet-k-bridge-2026-06-06": "Best crowd of my life, under an actual bridge.",
+    "helena-hauff-basement-2025-12-12": "Too hard for a school night. My fault."
+  },
+  "moments": {
+    "rufus-du-sol-msg-2025-10-17": "the_encore",
+    "anyma-brooklyn-mirage-2025-08-23": "the_visuals",
+    "four-tet-k-bridge-2026-06-06": "the_crowd",
+    "charli-xcx-barclays-2025-10-04": "the_drop"
+  }
+}

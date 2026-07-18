@@ -1,0 +1,4 @@
+# Supabase CLI config — hosted-only workflow (no local Docker stack).
+# `supabase link --project-ref <ref>` attaches this repo to the hosted project;
+# `supabase db push` applies supabase/migrations/ in order.
+project_id = "encore"
