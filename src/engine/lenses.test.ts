@@ -19,19 +19,19 @@ describe('applyLens', () => {
       expect(e.tier).toBe(tierOf(ladder, e.globalRank - 1));
     }
     expect(lens.map((e) => e.showId)).toEqual([
-      'log-fourtet',
+      'log-rufus',
       'log-peggy',
+      'log-charli',
       'log-jungle',
       'log-koze',
-      'log-kaytranada',
-      'log-mj',
+      'log-sammy',
     ]);
   });
 
   it('filters by capacityTier and city', () => {
     const ladder = andrewLadder();
     const clubs = applyLens(ladder, { capacityTier: 'club' });
-    expect(clubs.map((e) => e.showId)).toEqual(['log-koze', 'log-mj', 'log-helena']);
+    expect(clubs.map((e) => e.showId)).toEqual(['log-charli', 'log-koze', 'log-helena']);
     expect(applyLens(ladder, { city: 'NYC' })).toHaveLength(15);
     expect(applyLens(ladder, { city: 'LA' })).toHaveLength(0);
   });
@@ -40,7 +40,7 @@ describe('applyLens', () => {
     const ladder = andrewLadder();
     const before = ladder.entries.map((e) => e.showId);
     const lens = applyLens(ladder, { genre: 'house', capacityTier: 'theater' });
-    expect(lens.map((e) => e.showId)).toEqual(['log-peggy', 'log-sammy']);
+    expect(lens.map((e) => e.showId)).toEqual(['log-sammy']);
     expect(ladder.entries.map((e) => e.showId)).toEqual(before);
   });
 

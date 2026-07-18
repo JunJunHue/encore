@@ -10,7 +10,7 @@ we violently disagree about that Four Tet set." Beli for live music; built for t
 keep this ranking in their heads anyway.
 
 This is the 48-hour hackathon MVP: four screens (log, rank, ladder, compare) + a recap card,
-running on a seeded universe of ~200 real NYC shows (Jul '25–Jul '26).
+running on a seeded universe of ~200 real NYC shows (May '25–Jul '26).
 
 📄 [ARCHITECTURE](docs/ARCHITECTURE.md) · [DEMO runbook](docs/DEMO.md) ·
 [CONTRIBUTING](CONTRIBUTING.md) · [PRODUCT design](docs/PRODUCT.md)

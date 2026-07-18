@@ -190,5 +190,13 @@
     "borough": "Long Island",
     "capacityTier": "arena",
     "capacity": 17500
+  },
+  {
+    "slug": "hammerstein-ballroom",
+    "name": "Hammerstein Ballroom",
+    "neighborhood": "Midtown Manhattan",
+    "borough": "Manhattan",
+    "capacityTier": "theater",
+    "capacity": 2200
   }
 ]

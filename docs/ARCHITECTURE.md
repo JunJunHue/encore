@@ -234,34 +234,35 @@ Owner: W1, **`src/engine/tasteMatch.ts`** (engine, not lib — it's pure math an
 Demo user Andrew (15 shows) × seeded friend Maya (32 shows) share 12 shows pre-demo. Subset
 re-ranks (Andrew's from the §7.1 ladder order; Maya's pinned in `seed/friends.json`):
 
-| Shared show                       | Date       | Andrew |  Maya |   d |  d² |
-| --------------------------------- | ---------- | -----: | ----: | --: | --: |
-| Rüfüs Du Sol @ MSG                | 2025-10-17 |      1 |     1 |   0 |   0 |
-| Anyma @ Brooklyn Mirage           | 2025-08-23 |      2 |     2 |   0 |   0 |
-| **Four Tet @ Under the K Bridge** | 2026-06-06 |  **3** | **9** |  −6 |  36 |
-| Bicep @ Knockdown Center          | 2025-11-14 |      4 |     3 |   1 |   1 |
-| Lane 8 @ Brooklyn Mirage          | 2025-09-05 |      5 |     4 |   1 |   1 |
-| Jamie xx @ Forest Hills           | 2025-09-27 |      6 |     6 |   0 |   0 |
-| Peggy Gou @ Great Hall            | 2026-02-14 |      7 |     7 |   0 |   0 |
-| Fontaines D.C. @ Brooklyn Steel   | 2025-11-21 |      8 |     5 |   3 |   9 |
-| Charli XCX @ Barclays             | 2025-10-04 |      9 |    12 |  −3 |   9 |
-| DJ Koze @ Nowadays                | 2026-04-18 |     10 |    10 |   0 |   0 |
-| Sammy Virji @ Webster Hall        | 2025-12-05 |     11 |     8 |   3 |   9 |
-| Helena Hauff @ Basement           | 2025-12-12 |     12 |    11 |   1 |   1 |
+| Shared show                        | Date       | Andrew |   Maya |   d |  d² |    w |
+| ---------------------------------- | ---------- | -----: | -----: | --: | --: | ---: |
+| Rüfüs Du Sol @ MSG                 | 2026-06-26 |      1 |      1 |   0 |   0 | 0.97 |
+| Anyma @ Brooklyn Mirage            | 2025-08-23 |      2 |      5 |  −3 |   9 | 0.66 |
+| **Four Tet @ Under the K Bridge**  | 2025-05-17 |  **3** |  **9** |  −6 |  36 | 0.58 |
+| Bicep @ Knockdown Center           | 2025-11-14 |      4 |      2 |   2 |   4 | 0.73 |
+| Lane 8 @ Under the K Bridge        | 2025-06-14 |      5 |      4 |   1 |   1 | 0.60 |
+| Jamie xx @ Under the K Bridge      | 2025-08-01 |      6 |      6 |   0 |   0 | 0.64 |
+| Peggy Gou @ Under the K Bridge     | 2026-05-09 |      7 |      7 |   0 |   0 | 0.92 |
+| Fontaines D.C. @ Hammerstein       | 2025-05-16 |      8 |      3 |   5 |  25 | 0.58 |
+| Charli XCX @ Music Hall of Wburg   | 2026-07-10 |      9 |     12 |  −3 |   9 | 0.99 |
+| DJ Koze @ Nowadays                 | 2026-04-18 |     10 |     10 |   0 |   0 | 0.89 |
+| Sammy Virji @ Webster Hall         | 2026-05-08 |     11 |      8 |   3 |   9 | 0.91 |
+| Helena Hauff @ Basement            | 2025-12-12 |     12 |     11 |   1 |   1 | 0.76 |
 
-(Maya's subset order follows her full-ladder positions pinned in `seed/friends.json`: Bicep #3,
-Lane 8 #4, Fontaines #5, Jamie xx #8, Peggy #11, Sammy #14, Four Tet #21, Koze #24, Helena #26,
-Charli #29.) Unweighted, Σd² = 66 → plain Spearman ρ = 1 − 6·66/(12·143) = 0.769 → would round
-to 88. But the recency weights (2026-07-18 anchor, 18-month half-life: Four Tet w≈0.95, DJ Koze
-w≈0.89, Peggy w≈0.82 vs ≈0.66–0.76 for the 2025 shows) load the freshest disagreements hardest:
-**ρ_w = 0.7373 → match = round(50 × 1.7373) = 87.** ✓
+(Maya's subset order follows her full-ladder positions pinned in `seed/friends.json`: Rüfüs #1,
+Bicep #2, Fontaines #3, Lane 8 #4, Anyma #5, Fred #6, Jamie xx #9, Peggy #10, Sammy #14,
+Four Tet #21, Koze #25, Helena #26, Charli #29.) Unweighted, Σd² = 94 → plain Spearman
+ρ = 1 − 6·94/(12·143) = 0.671 → would round to 84. The recency weights (2026-07-18 anchor,
+18-month half-life) discount the aged-out spring-'25 disagreements (Four Tet w≈0.58, Fontaines
+w≈0.58) while the fresh agreements (Rüfüs w≈0.97, Peggy w≈0.92, Koze w≈0.89) pull the number up:
+**ρ_w = 0.7317 → match = round(50 × 1.7317) = 87.** ✓
 
 **Post-log invariance:** Fred again.. @ Forest Hills (2026-07-11) enters at Andrew subset
 position 6 (ladder #6, §7.2) and Maya subset position 6 — she has Fred at her full-ladder **#6**,
-with Rüfüs, Anyma, Bicep, Lane 8, and Fontaines among shared shows above it. Fred contributes
+with Rüfüs, Bicep, Fontaines, Lane 8, and Anyma among shared shows above it. Fred contributes
 delta 0 at near-full weight (w≈0.99); Four Tet's delta stretches to −7 (subset 3 vs 10). n=13,
-ρ_w = 0.7304 → **still 87**. A Vitest test asserts `tasteMatch(fixture) === 87` both pre- and
-post-log, so seed edits cannot silently break the money number.
+Σd² = 118, ρ_w = 0.7417 → **still 87**. A Vitest test asserts `tasteMatch(fixture) === 87` both
+pre- and post-log, so seed edits cannot silently break the money number.
 
 The scripted "violent disagreement" beat cites **Four Tet** only (Andrew #3 all-time, Maya
 full-ladder #21 / subset 9 pre, 10 post), with Maya's seeded note on that log — _"Left before the encore."_ —

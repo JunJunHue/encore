@@ -16,20 +16,20 @@ delete from comparisons
 delete from set_logs
  where user_id = '00000000-0000-4000-a000-000000000001'
    and id not in (
-     '2eb54d03-533a-5b86-8b38-c378d683044c',
+     'e13f3d36-a3fe-5325-a6a9-0db08cd39795',
      'bf1902f1-4847-542c-8863-231f6e759664',
-     '11f7c896-5475-5aea-ad9e-644a2961763c',
+     '4af20ab9-a322-50a5-8c94-2467c130b1db',
      '24d746fc-043f-5b3b-9eee-fd63ecc93be3',
-     '10198473-76cb-53b5-adaa-15acb24fb98e',
-     '48056b81-aad9-5968-9fac-bf7902fd4922',
-     '188de338-11e4-5341-9cbe-7b3b8fc45f7a',
-     '0e537308-addf-5346-bfe3-15b1df6b80eb',
-     '7ded17a4-7eda-5d28-affb-d2364ea93aca',
+     '26aa52a4-9cdd-5d6e-9191-edc0f65a303d',
+     '770c1774-e803-5a6d-8060-885846371e09',
+     '4d68ab68-8b34-5597-a0d6-2b51e9b3e945',
+     '05a24374-885d-542e-9411-ec5ac16f0c39',
+     'a3701da6-cd9c-562e-8ab3-45f3313edc44',
      'e3a06755-ef81-57bb-8611-1960e29e3e3c',
      'a1377db0-09ac-52d5-b4ce-8abab8dce66d',
-     'aa45da84-251c-5cbe-ae54-a00dc54b5c34',
-     '3b41cd74-0e98-5a5b-bc77-a6ee51b710de',
-     'a352791c-fa8e-5859-953c-fc84c07033d9',
+     'f617fbf2-0071-5b4b-a252-f6374db23df6',
+     '2a48699e-a88e-526a-b110-d4425f974348',
+     '65baf3da-0a12-53a3-b25b-3936fcafcff8',
      '6be5b43e-6907-5ee2-be89-83f8172e74c4'
    );
 
@@ -40,20 +40,20 @@ update set_logs as sl
        note = v.note,
        moment = v.moment::moment_tag
   from (values
-    ('2eb54d03-533a-5b86-8b38-c378d683044c'::uuid, 1, 1808::double precision, 'Innerbloom closer. Grown men crying everywhere.', 'the_encore'),
+    ('e13f3d36-a3fe-5325-a6a9-0db08cd39795'::uuid, 1, 1808::double precision, 'Innerbloom closer. Grown men crying everywhere.', 'the_encore'),
     ('bf1902f1-4847-542c-8863-231f6e759664'::uuid, 2, 1766::double precision, null, 'the_visuals'),
-    ('11f7c896-5475-5aea-ad9e-644a2961763c'::uuid, 3, 1728::double precision, 'Best crowd of my life, under an actual bridge.', 'the_crowd'),
+    ('4af20ab9-a322-50a5-8c94-2467c130b1db'::uuid, 3, 1728::double precision, 'Best crowd of my life, under an actual bridge.', 'the_crowd'),
     ('24d746fc-043f-5b3b-9eee-fd63ecc93be3'::uuid, 4, 1638::double precision, null, null),
-    ('10198473-76cb-53b5-adaa-15acb24fb98e'::uuid, 5, 1600::double precision, null, null),
-    ('48056b81-aad9-5968-9fac-bf7902fd4922'::uuid, 6, 1560::double precision, null, null),
-    ('188de338-11e4-5341-9cbe-7b3b8fc45f7a'::uuid, 7, 1516::double precision, null, null),
-    ('0e537308-addf-5346-bfe3-15b1df6b80eb'::uuid, 8, 1426::double precision, null, null),
-    ('7ded17a4-7eda-5d28-affb-d2364ea93aca'::uuid, 9, 1388::double precision, null, 'the_drop'),
+    ('26aa52a4-9cdd-5d6e-9191-edc0f65a303d'::uuid, 5, 1600::double precision, null, null),
+    ('770c1774-e803-5a6d-8060-885846371e09'::uuid, 6, 1560::double precision, null, null),
+    ('4d68ab68-8b34-5597-a0d6-2b51e9b3e945'::uuid, 7, 1516::double precision, null, null),
+    ('05a24374-885d-542e-9411-ec5ac16f0c39'::uuid, 8, 1426::double precision, null, null),
+    ('a3701da6-cd9c-562e-8ab3-45f3313edc44'::uuid, 9, 1388::double precision, null, 'the_drop'),
     ('e3a06755-ef81-57bb-8611-1960e29e3e3c'::uuid, 10, 1348::double precision, null, null),
     ('a1377db0-09ac-52d5-b4ce-8abab8dce66d'::uuid, 11, 1258::double precision, null, null),
-    ('aa45da84-251c-5cbe-ae54-a00dc54b5c34'::uuid, 12, 1218::double precision, null, null),
-    ('3b41cd74-0e98-5a5b-bc77-a6ee51b710de'::uuid, 13, 1180::double precision, null, null),
-    ('a352791c-fa8e-5859-953c-fc84c07033d9'::uuid, 14, 1090::double precision, null, null),
+    ('f617fbf2-0071-5b4b-a252-f6374db23df6'::uuid, 12, 1218::double precision, null, null),
+    ('2a48699e-a88e-526a-b110-d4425f974348'::uuid, 13, 1180::double precision, null, null),
+    ('65baf3da-0a12-53a3-b25b-3936fcafcff8'::uuid, 14, 1090::double precision, null, null),
     ('6be5b43e-6907-5ee2-be89-83f8172e74c4'::uuid, 15, 1052::double precision, 'Too hard for a school night. My fault.', null)
   ) as v(id, rank_pos, latent_score, note, moment)
  where sl.id = v.id;

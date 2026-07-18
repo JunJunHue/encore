@@ -6,43 +6,48 @@
       "displayName": "Maya R.",
       "handle": "@mayaraves",
       "bio": "Warehouse-first, but says yes to everything.",
-      "tierCuts": [4, 12, 23, 29],
+      "tierCuts": [
+        4,
+        12,
+        23,
+        29
+      ],
       "ladder": [
-        "rufus-du-sol-msg-2025-10-17",
-        "anyma-brooklyn-mirage-2025-08-23",
+        "rufus-du-sol-msg-2026-06-26",
         "bicep-knockdown-center-2025-11-14",
-        "lane-8-brooklyn-mirage-2025-09-05",
-        "fontaines-dc-brooklyn-steel-2025-11-21",
+        "fontaines-dc-hammerstein-2025-05-16",
+        "lane-8-k-bridge-2025-06-14",
+        "anyma-brooklyn-mirage-2025-08-23",
         "fred-again-forest-hills-2026-07-11",
         "lcd-soundsystem-knockdown-center-2025-12-13",
-        "jamie-xx-forest-hills-2025-09-27",
         "floating-points-knockdown-center-2025-10-24",
+        "jamie-xx-k-bridge-2025-08-01",
+        "peggy-gou-k-bridge-2026-05-09",
         "disclosure-brooklyn-mirage-2025-09-12",
-        "peggy-gou-great-hall-2026-02-14",
         "bonobo-brooklyn-mirage-2025-08-30",
         "jon-hopkins-kings-theatre-2026-02-06",
-        "sammy-virji-webster-hall-2025-12-05",
+        "sammy-virji-webster-hall-2026-05-08",
         "overmono-knockdown-center-2026-05-23",
         "caribou-brooklyn-steel-2026-04-10",
         "folamour-brooklyn-mirage-2026-06-12",
         "yaeji-brooklyn-paramount-2026-04-24",
         "honey-dijon-good-room-2026-01-17",
         "big-thief-kings-theatre-2026-01-30",
-        "four-tet-k-bridge-2026-06-06",
+        "four-tet-k-bridge-2025-05-17",
         "tsha-elsewhere-2026-03-06",
         "japanese-breakfast-brooklyn-steel-2025-10-03",
-        "dj-koze-nowadays-2026-04-18",
         "the-blessed-madonna-elsewhere-2025-11-08",
+        "dj-koze-nowadays-2026-04-18",
         "helena-hauff-basement-2025-12-12",
         "nia-archives-elsewhere-2025-09-19",
         "wet-leg-brooklyn-steel-2026-05-15",
-        "charli-xcx-barclays-2025-10-04",
+        "charli-xcx-music-hall-williamsburg-2026-07-10",
         "romy-good-room-2025-10-10",
         "barry-cant-swim-terminal-5-2026-02-20",
         "alvvays-brooklyn-paramount-2025-11-07"
       ],
       "notes": {
-        "four-tet-k-bridge-2026-06-06": "Left before the encore.",
+        "four-tet-k-bridge-2025-05-17": "Left before the encore.",
         "lcd-soundsystem-knockdown-center-2025-12-13": "All My Friends in a warehouse. Cried.",
         "fred-again-forest-hills-2026-07-11": "Whole stadium singing Delilah. Unreal."
       },
@@ -58,52 +63,75 @@
       "displayName": "Dex T.",
       "handle": "@dex_303",
       "bio": "Techno purist; thinks melodic house is a war crime.",
-      "tierCuts": [3, 10, 19, 24],
+      "tierCuts": [
+        3,
+        10,
+        19,
+        24
+      ],
       "ladder": [
         "ben-klock-basement-2025-10-11",
-        "four-tet-k-bridge-2026-06-06",
+        "bicep-knockdown-center-2025-11-14",
         "helena-hauff-basement-2025-12-12",
+        "four-tet-k-bridge-2025-05-17",
         "marcel-dettmann-basement-2026-02-21",
         "jeff-mills-public-records-2026-03-14",
         "blawan-basement-2026-01-10",
-        "bicep-knockdown-center-2025-11-14",
         "overmono-knockdown-center-2026-05-23",
         "surgeon-public-records-2025-08-16",
         "dvs1-basement-2025-12-19",
         "objekt-nowadays-2026-02-07",
-        "anyma-brooklyn-mirage-2025-08-23",
         "999999999-knockdown-center-2026-03-28",
+        "anyma-brooklyn-mirage-2025-08-23",
         "kobosil-knockdown-center-2025-10-31",
         "skee-mask-knockdown-center-2026-04-11",
-        "sammy-virji-webster-hall-2025-12-05",
         "rrose-nowadays-2025-09-13",
         "paula-temple-public-records-2025-11-01",
         "charlotte-de-witte-brooklyn-mirage-2025-09-20",
         "amelie-lens-great-hall-2025-11-22",
         "dj-koze-nowadays-2026-04-18",
+        "lane-8-k-bridge-2025-06-14",
+        "sammy-virji-webster-hall-2026-05-08",
         "dax-j-basement-2026-05-30",
         "i-hate-models-knockdown-center-2026-01-24",
         "sara-landry-great-hall-2026-04-04",
-        "perc-basement-2026-06-20",
-        "lane-8-brooklyn-mirage-2025-09-05"
+        "perc-basement-2026-06-20"
       ],
       "notes": {
         "ben-klock-basement-2025-10-11": "Six hours. No talking. Perfect.",
-        "lane-8-brooklyn-mirage-2025-09-05": "Maya dragged me. Never again.",
+        "lane-8-k-bridge-2025-06-14": "Maya dragged me. Never again.",
         "anyma-brooklyn-mirage-2025-08-23": "Screens were cool I guess."
       },
       "moments": {
         "ben-klock-basement-2025-10-11": "the_crowd",
-        "four-tet-k-bridge-2026-06-06": "the_encore"
+        "four-tet-k-bridge-2025-05-17": "the_encore"
       }
     }
   ],
   "follows": [
-    ["andrew", "maya"],
-    ["maya", "andrew"],
-    ["andrew", "dex"],
-    ["dex", "andrew"],
-    ["maya", "dex"],
-    ["dex", "maya"]
+    [
+      "andrew",
+      "maya"
+    ],
+    [
+      "maya",
+      "andrew"
+    ],
+    [
+      "andrew",
+      "dex"
+    ],
+    [
+      "dex",
+      "andrew"
+    ],
+    [
+      "maya",
+      "dex"
+    ],
+    [
+      "dex",
+      "maya"
+    ]
   ]
 }

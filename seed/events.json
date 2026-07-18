@@ -2,1404 +2,1921 @@
   {
     "slug": "fred-again-forest-hills-2026-07-11",
     "artist": "Fred again..",
-    "artistGenres": ["electronic", "house"],
+    "artistGenres": [
+      "electronic",
+      "house"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2026-07-11",
-    "supportingArtists": ["Joy Anonymous"]
+    "supportingArtists": [
+      "Joy Anonymous"
+    ]
   },
   {
-    "slug": "rufus-du-sol-msg-2025-10-17",
+    "slug": "rufus-du-sol-msg-2026-06-26",
     "artist": "Rüfüs Du Sol",
-    "artistGenres": ["electronic", "house"],
+    "artistGenres": [
+      "electronic",
+      "house"
+    ],
     "venue": "madison-square-garden",
-    "date": "2025-10-17"
+    "date": "2026-06-26",
+    "supportingArtists": [
+      "Maribou State"
+    ]
   },
   {
     "slug": "anyma-brooklyn-mirage-2025-08-23",
     "artist": "Anyma",
-    "artistGenres": ["techno", "electronic"],
+    "artistGenres": [
+      "techno",
+      "electronic"
+    ],
     "venue": "brooklyn-mirage",
     "date": "2025-08-23",
-    "supportingArtists": ["Layton Giordani"]
+    "supportingArtists": [
+      "Layton Giordani"
+    ]
   },
   {
-    "slug": "four-tet-k-bridge-2026-06-06",
+    "slug": "four-tet-k-bridge-2025-05-17",
     "artist": "Four Tet",
-    "artistGenres": ["electronic"],
+    "artistGenres": [
+      "electronic"
+    ],
     "venue": "under-the-k-bridge-park",
-    "date": "2026-06-06",
-    "supportingArtists": ["Floating Points"]
+    "date": "2025-05-17",
+    "supportingArtists": [
+      "Joy Orbison",
+      "Nia Archives",
+      "Blawan"
+    ]
   },
   {
     "slug": "bicep-knockdown-center-2025-11-14",
     "artist": "Bicep",
-    "artistGenres": ["electronic", "techno"],
+    "artistGenres": [
+      "electronic",
+      "techno"
+    ],
     "venue": "knockdown-center",
     "date": "2025-11-14"
   },
   {
-    "slug": "lane-8-brooklyn-mirage-2025-09-05",
+    "slug": "lane-8-k-bridge-2025-06-14",
     "artist": "Lane 8",
-    "artistGenres": ["house", "electronic"],
-    "venue": "brooklyn-mirage",
-    "date": "2025-09-05"
+    "artistGenres": [
+      "house",
+      "electronic"
+    ],
+    "venue": "under-the-k-bridge-park",
+    "date": "2025-06-14"
   },
   {
-    "slug": "jamie-xx-forest-hills-2025-09-27",
+    "slug": "jamie-xx-k-bridge-2025-08-01",
     "artist": "Jamie xx",
-    "artistGenres": ["electronic"],
-    "venue": "forest-hills-stadium",
-    "date": "2025-09-27",
-    "supportingArtists": ["Romy"]
+    "artistGenres": [
+      "electronic"
+    ],
+    "venue": "under-the-k-bridge-park",
+    "date": "2025-08-01",
+    "supportingArtists": [
+      "Daphni"
+    ]
   },
   {
-    "slug": "fontaines-dc-brooklyn-steel-2025-11-21",
+    "slug": "fontaines-dc-hammerstein-2025-05-16",
     "artist": "Fontaines D.C.",
-    "artistGenres": ["indie", "rock"],
-    "venue": "brooklyn-steel",
-    "date": "2025-11-21"
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
+    "venue": "hammerstein-ballroom",
+    "date": "2025-05-16",
+    "supportingArtists": [
+      "Jadu Heart"
+    ]
   },
   {
-    "slug": "peggy-gou-great-hall-2026-02-14",
+    "slug": "peggy-gou-k-bridge-2026-05-09",
     "artist": "Peggy Gou",
-    "artistGenres": ["house"],
-    "venue": "great-hall-avant-gardner",
-    "date": "2026-02-14"
+    "artistGenres": [
+      "house"
+    ],
+    "venue": "under-the-k-bridge-park",
+    "date": "2026-05-09",
+    "supportingArtists": [
+      "Mall Grab",
+      "Elkka"
+    ]
   },
   {
-    "slug": "charli-xcx-barclays-2025-10-04",
+    "slug": "charli-xcx-music-hall-williamsburg-2026-07-10",
     "artist": "Charli XCX",
-    "artistGenres": ["pop", "electronic"],
-    "venue": "barclays-center",
-    "date": "2025-10-04"
+    "artistGenres": [
+      "pop",
+      "electronic"
+    ],
+    "venue": "music-hall-of-williamsburg",
+    "date": "2026-07-10"
   },
   {
     "slug": "jungle-brooklyn-paramount-2026-03-13",
     "artist": "Jungle",
-    "artistGenres": ["electronic", "r&b"],
+    "artistGenres": [
+      "electronic",
+      "r&b"
+    ],
     "venue": "brooklyn-paramount",
     "date": "2026-03-13"
   },
   {
     "slug": "dj-koze-nowadays-2026-04-18",
     "artist": "DJ Koze",
-    "artistGenres": ["house", "electronic"],
+    "artistGenres": [
+      "house",
+      "electronic"
+    ],
     "venue": "nowadays",
     "date": "2026-04-18"
   },
   {
     "slug": "helena-hauff-basement-2025-12-12",
     "artist": "Helena Hauff",
-    "artistGenres": ["techno", "electronic"],
+    "artistGenres": [
+      "techno",
+      "electronic"
+    ],
     "venue": "basement",
     "date": "2025-12-12"
   },
   {
-    "slug": "mj-lenderman-bowery-ballroom-2026-01-22",
+    "slug": "mj-lenderman-kings-theatre-2025-10-16",
     "artist": "MJ Lenderman",
-    "artistGenres": ["indie", "rock"],
-    "venue": "bowery-ballroom",
-    "date": "2026-01-22"
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
+    "venue": "kings-theatre",
+    "date": "2025-10-16",
+    "supportingArtists": [
+      "Hovvdy"
+    ]
   },
   {
-    "slug": "kaytranada-radio-city-2026-05-08",
+    "slug": "kaytranada-barclays-2025-11-08",
     "artist": "Kaytranada",
-    "artistGenres": ["r&b", "house"],
-    "venue": "radio-city-music-hall",
-    "date": "2026-05-08"
+    "artistGenres": [
+      "r&b",
+      "house"
+    ],
+    "venue": "barclays-center",
+    "date": "2025-11-08",
+    "supportingArtists": [
+      "Busy P"
+    ]
   },
   {
     "slug": "kamasi-washington-blue-note-2026-02-27",
     "artist": "Kamasi Washington",
-    "artistGenres": ["jazz"],
+    "artistGenres": [
+      "jazz"
+    ],
     "venue": "blue-note",
     "date": "2026-02-27"
   },
   {
     "slug": "overmono-knockdown-center-2026-05-23",
     "artist": "Overmono",
-    "artistGenres": ["electronic", "techno"],
+    "artistGenres": [
+      "electronic",
+      "techno"
+    ],
     "venue": "knockdown-center",
     "date": "2026-05-23"
   },
   {
-    "slug": "sammy-virji-webster-hall-2025-12-05",
+    "slug": "sammy-virji-webster-hall-2026-05-08",
     "artist": "Sammy Virji",
-    "artistGenres": ["house", "electronic"],
+    "artistGenres": [
+      "house",
+      "electronic"
+    ],
     "venue": "webster-hall",
-    "date": "2025-12-05"
+    "date": "2026-05-08"
   },
   {
     "slug": "lcd-soundsystem-knockdown-center-2025-12-13",
     "artist": "LCD Soundsystem",
-    "artistGenres": ["indie", "electronic"],
+    "artistGenres": [
+      "indie",
+      "electronic"
+    ],
     "venue": "knockdown-center",
     "date": "2025-12-13"
   },
   {
     "slug": "floating-points-knockdown-center-2025-10-24",
     "artist": "Floating Points",
-    "artistGenres": ["electronic", "jazz"],
+    "artistGenres": [
+      "electronic",
+      "jazz"
+    ],
     "venue": "knockdown-center",
     "date": "2025-10-24"
   },
   {
     "slug": "disclosure-brooklyn-mirage-2025-09-12",
     "artist": "Disclosure",
-    "artistGenres": ["house", "electronic"],
+    "artistGenres": [
+      "house",
+      "electronic"
+    ],
     "venue": "brooklyn-mirage",
     "date": "2025-09-12"
   },
   {
     "slug": "bonobo-brooklyn-mirage-2025-08-30",
     "artist": "Bonobo",
-    "artistGenres": ["electronic"],
+    "artistGenres": [
+      "electronic"
+    ],
     "venue": "brooklyn-mirage",
     "date": "2025-08-30"
   },
   {
     "slug": "jon-hopkins-kings-theatre-2026-02-06",
     "artist": "Jon Hopkins",
-    "artistGenres": ["electronic"],
+    "artistGenres": [
+      "electronic"
+    ],
     "venue": "kings-theatre",
     "date": "2026-02-06"
   },
   {
     "slug": "caribou-brooklyn-steel-2026-04-10",
     "artist": "Caribou",
-    "artistGenres": ["electronic", "indie"],
+    "artistGenres": [
+      "electronic",
+      "indie"
+    ],
     "venue": "brooklyn-steel",
     "date": "2026-04-10"
   },
   {
     "slug": "folamour-brooklyn-mirage-2026-06-12",
     "artist": "Folamour",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "brooklyn-mirage",
     "date": "2026-06-12"
   },
   {
     "slug": "yaeji-brooklyn-paramount-2026-04-24",
     "artist": "Yaeji",
-    "artistGenres": ["electronic", "house"],
+    "artistGenres": [
+      "electronic",
+      "house"
+    ],
     "venue": "brooklyn-paramount",
     "date": "2026-04-24"
   },
   {
     "slug": "honey-dijon-good-room-2026-01-17",
     "artist": "Honey Dijon",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "good-room",
     "date": "2026-01-17"
   },
   {
     "slug": "big-thief-kings-theatre-2026-01-30",
     "artist": "Big Thief",
-    "artistGenres": ["indie"],
+    "artistGenres": [
+      "indie"
+    ],
     "venue": "kings-theatre",
     "date": "2026-01-30"
   },
   {
     "slug": "tsha-elsewhere-2026-03-06",
     "artist": "TSHA",
-    "artistGenres": ["house", "electronic"],
+    "artistGenres": [
+      "house",
+      "electronic"
+    ],
     "venue": "elsewhere-hall",
     "date": "2026-03-06"
   },
   {
     "slug": "japanese-breakfast-brooklyn-steel-2025-10-03",
     "artist": "Japanese Breakfast",
-    "artistGenres": ["indie"],
+    "artistGenres": [
+      "indie"
+    ],
     "venue": "brooklyn-steel",
     "date": "2025-10-03"
   },
   {
     "slug": "the-blessed-madonna-elsewhere-2025-11-08",
     "artist": "The Blessed Madonna",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "elsewhere-hall",
     "date": "2025-11-08"
   },
   {
     "slug": "nia-archives-elsewhere-2025-09-19",
     "artist": "Nia Archives",
-    "artistGenres": ["electronic"],
+    "artistGenres": [
+      "electronic"
+    ],
     "venue": "elsewhere-hall",
     "date": "2025-09-19"
   },
   {
     "slug": "wet-leg-brooklyn-steel-2026-05-15",
     "artist": "Wet Leg",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "brooklyn-steel",
     "date": "2026-05-15"
   },
   {
     "slug": "romy-good-room-2025-10-10",
     "artist": "Romy",
-    "artistGenres": ["electronic", "pop"],
+    "artistGenres": [
+      "electronic",
+      "pop"
+    ],
     "venue": "good-room",
     "date": "2025-10-10"
   },
   {
     "slug": "barry-cant-swim-terminal-5-2026-02-20",
     "artist": "Barry Can't Swim",
-    "artistGenres": ["electronic", "house"],
+    "artistGenres": [
+      "electronic",
+      "house"
+    ],
     "venue": "terminal-5",
     "date": "2026-02-20"
   },
   {
     "slug": "alvvays-brooklyn-paramount-2025-11-07",
     "artist": "Alvvays",
-    "artistGenres": ["indie"],
+    "artistGenres": [
+      "indie"
+    ],
     "venue": "brooklyn-paramount",
     "date": "2025-11-07"
   },
   {
     "slug": "ben-klock-basement-2025-10-11",
     "artist": "Ben Klock",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "basement",
     "date": "2025-10-11"
   },
   {
     "slug": "marcel-dettmann-basement-2026-02-21",
     "artist": "Marcel Dettmann",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "basement",
     "date": "2026-02-21"
   },
   {
     "slug": "amelie-lens-great-hall-2025-11-22",
     "artist": "Amelie Lens",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "great-hall-avant-gardner",
     "date": "2025-11-22"
   },
   {
     "slug": "charlotte-de-witte-brooklyn-mirage-2025-09-20",
     "artist": "Charlotte de Witte",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "brooklyn-mirage",
     "date": "2025-09-20"
   },
   {
     "slug": "jeff-mills-public-records-2026-03-14",
     "artist": "Jeff Mills",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "public-records",
     "date": "2026-03-14"
   },
   {
     "slug": "blawan-basement-2026-01-10",
     "artist": "Blawan",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "basement",
     "date": "2026-01-10"
   },
   {
     "slug": "surgeon-public-records-2025-08-16",
     "artist": "Surgeon",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "public-records",
     "date": "2025-08-16"
   },
   {
     "slug": "dax-j-basement-2026-05-30",
     "artist": "Dax J",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "basement",
     "date": "2026-05-30"
   },
   {
     "slug": "kobosil-knockdown-center-2025-10-31",
     "artist": "Kobosil",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "knockdown-center",
     "date": "2025-10-31"
   },
   {
     "slug": "i-hate-models-knockdown-center-2026-01-24",
     "artist": "I Hate Models",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "knockdown-center",
     "date": "2026-01-24"
   },
   {
     "slug": "sara-landry-great-hall-2026-04-04",
     "artist": "Sara Landry",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "great-hall-avant-gardner",
     "date": "2026-04-04"
   },
   {
     "slug": "999999999-knockdown-center-2026-03-28",
     "artist": "999999999",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "knockdown-center",
     "date": "2026-03-28"
   },
   {
     "slug": "rrose-nowadays-2025-09-13",
     "artist": "Rrose",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "nowadays",
     "date": "2025-09-13"
   },
   {
     "slug": "dvs1-basement-2025-12-19",
     "artist": "DVS1",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "basement",
     "date": "2025-12-19"
   },
   {
     "slug": "objekt-nowadays-2026-02-07",
     "artist": "Objekt",
-    "artistGenres": ["techno", "electronic"],
+    "artistGenres": [
+      "techno",
+      "electronic"
+    ],
     "venue": "nowadays",
     "date": "2026-02-07"
   },
   {
     "slug": "skee-mask-knockdown-center-2026-04-11",
     "artist": "Skee Mask",
-    "artistGenres": ["electronic", "techno"],
+    "artistGenres": [
+      "electronic",
+      "techno"
+    ],
     "venue": "knockdown-center",
     "date": "2026-04-11"
   },
   {
     "slug": "perc-basement-2026-06-20",
     "artist": "Perc",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "basement",
     "date": "2026-06-20"
   },
   {
     "slug": "paula-temple-public-records-2025-11-01",
     "artist": "Paula Temple",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "public-records",
     "date": "2025-11-01"
   },
   {
     "slug": "vampire-weekend-forest-hills-2025-07-19",
     "artist": "Vampire Weekend",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2025-07-19"
   },
   {
     "slug": "hozier-forest-hills-2025-07-26",
     "artist": "Hozier",
-    "artistGenres": ["rock", "indie"],
+    "artistGenres": [
+      "rock",
+      "indie"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2025-07-26"
   },
   {
     "slug": "queens-of-the-stone-age-forest-hills-2025-07-12",
     "artist": "Queens of the Stone Age",
-    "artistGenres": ["rock"],
+    "artistGenres": [
+      "rock"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2025-07-12"
   },
   {
     "slug": "the-killers-forest-hills-2025-08-09",
     "artist": "The Killers",
-    "artistGenres": ["rock", "pop"],
+    "artistGenres": [
+      "rock",
+      "pop"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2025-08-09"
   },
   {
     "slug": "bleachers-forest-hills-2025-08-16",
     "artist": "Bleachers",
-    "artistGenres": ["indie", "pop"],
+    "artistGenres": [
+      "indie",
+      "pop"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2025-08-16"
   },
   {
     "slug": "alabama-shakes-forest-hills-2025-08-23",
     "artist": "Alabama Shakes",
-    "artistGenres": ["rock"],
+    "artistGenres": [
+      "rock"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2025-08-23"
   },
   {
     "slug": "kings-of-leon-forest-hills-2025-09-06",
     "artist": "Kings of Leon",
-    "artistGenres": ["rock"],
+    "artistGenres": [
+      "rock"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2025-09-06"
   },
   {
     "slug": "the-national-forest-hills-2025-09-13",
     "artist": "The National",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2025-09-13"
   },
   {
     "slug": "the-lumineers-forest-hills-2025-09-20",
     "artist": "The Lumineers",
-    "artistGenres": ["indie"],
+    "artistGenres": [
+      "indie"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2025-09-20"
   },
   {
     "slug": "tame-impala-forest-hills-2026-05-30",
     "artist": "Tame Impala",
-    "artistGenres": ["rock", "electronic"],
+    "artistGenres": [
+      "rock",
+      "electronic"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2026-05-30"
   },
   {
     "slug": "odesza-forest-hills-2026-06-13",
     "artist": "ODESZA",
-    "artistGenres": ["electronic"],
+    "artistGenres": [
+      "electronic"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2026-06-13"
   },
   {
     "slug": "florence-the-machine-forest-hills-2026-06-20",
     "artist": "Florence + the Machine",
-    "artistGenres": ["rock", "pop"],
+    "artistGenres": [
+      "rock",
+      "pop"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2026-06-20"
   },
   {
     "slug": "mumford-sons-forest-hills-2026-06-27",
     "artist": "Mumford & Sons",
-    "artistGenres": ["rock", "indie"],
+    "artistGenres": [
+      "rock",
+      "indie"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2026-06-27"
   },
   {
     "slug": "lorde-forest-hills-2026-07-03",
     "artist": "Lorde",
-    "artistGenres": ["pop"],
+    "artistGenres": [
+      "pop"
+    ],
     "venue": "forest-hills-stadium",
     "date": "2026-07-03"
   },
   {
     "slug": "tyler-the-creator-msg-2025-08-08",
     "artist": "Tyler, the Creator",
-    "artistGenres": ["hip-hop"],
+    "artistGenres": [
+      "hip-hop"
+    ],
     "venue": "madison-square-garden",
     "date": "2025-08-08"
   },
   {
     "slug": "dua-lipa-msg-2025-09-19",
     "artist": "Dua Lipa",
-    "artistGenres": ["pop"],
+    "artistGenres": [
+      "pop"
+    ],
     "venue": "madison-square-garden",
     "date": "2025-09-19"
   },
   {
     "slug": "billie-eilish-msg-2025-10-10",
     "artist": "Billie Eilish",
-    "artistGenres": ["pop"],
+    "artistGenres": [
+      "pop"
+    ],
     "venue": "madison-square-garden",
     "date": "2025-10-10"
   },
   {
     "slug": "chappell-roan-msg-2025-10-24",
     "artist": "Chappell Roan",
-    "artistGenres": ["pop"],
+    "artistGenres": [
+      "pop"
+    ],
     "venue": "madison-square-garden",
     "date": "2025-10-24"
   },
   {
     "slug": "sabrina-carpenter-msg-2025-11-01",
     "artist": "Sabrina Carpenter",
-    "artistGenres": ["pop"],
+    "artistGenres": [
+      "pop"
+    ],
     "venue": "madison-square-garden",
     "date": "2025-11-01"
   },
   {
     "slug": "sza-msg-2025-12-06",
     "artist": "SZA",
-    "artistGenres": ["r&b", "pop"],
+    "artistGenres": [
+      "r&b",
+      "pop"
+    ],
     "venue": "madison-square-garden",
     "date": "2025-12-06"
   },
   {
     "slug": "the-strokes-msg-2025-12-31",
     "artist": "The Strokes",
-    "artistGenres": ["rock", "indie"],
+    "artistGenres": [
+      "rock",
+      "indie"
+    ],
     "venue": "madison-square-garden",
     "date": "2025-12-31"
   },
   {
     "slug": "bad-bunny-msg-2026-02-13",
     "artist": "Bad Bunny",
-    "artistGenres": ["pop", "hip-hop"],
+    "artistGenres": [
+      "pop",
+      "hip-hop"
+    ],
     "venue": "madison-square-garden",
     "date": "2026-02-13"
   },
   {
     "slug": "justice-msg-2026-03-20",
     "artist": "Justice",
-    "artistGenres": ["electronic"],
+    "artistGenres": [
+      "electronic"
+    ],
     "venue": "madison-square-garden",
     "date": "2026-03-20"
   },
   {
     "slug": "olivia-rodrigo-msg-2026-04-03",
     "artist": "Olivia Rodrigo",
-    "artistGenres": ["pop", "rock"],
+    "artistGenres": [
+      "pop",
+      "rock"
+    ],
     "venue": "madison-square-garden",
     "date": "2026-04-03"
   },
   {
     "slug": "burna-boy-barclays-2025-08-15",
     "artist": "Burna Boy",
-    "artistGenres": ["pop", "r&b"],
+    "artistGenres": [
+      "pop",
+      "r&b"
+    ],
     "venue": "barclays-center",
     "date": "2025-08-15"
   },
   {
     "slug": "twenty-one-pilots-barclays-2025-09-26",
     "artist": "Twenty One Pilots",
-    "artistGenres": ["rock", "pop"],
+    "artistGenres": [
+      "rock",
+      "pop"
+    ],
     "venue": "barclays-center",
     "date": "2025-09-26"
   },
   {
     "slug": "cardi-b-barclays-2025-10-31",
     "artist": "Cardi B",
-    "artistGenres": ["hip-hop"],
+    "artistGenres": [
+      "hip-hop"
+    ],
     "venue": "barclays-center",
     "date": "2025-10-31"
   },
   {
     "slug": "doja-cat-barclays-2025-11-15",
     "artist": "Doja Cat",
-    "artistGenres": ["pop", "hip-hop"],
+    "artistGenres": [
+      "pop",
+      "hip-hop"
+    ],
     "venue": "barclays-center",
     "date": "2025-11-15"
   },
   {
     "slug": "doechii-barclays-2026-02-28",
     "artist": "Doechii",
-    "artistGenres": ["hip-hop"],
+    "artistGenres": [
+      "hip-hop"
+    ],
     "venue": "barclays-center",
     "date": "2026-02-28"
   },
   {
     "slug": "deftones-barclays-2026-03-06",
     "artist": "Deftones",
-    "artistGenres": ["rock"],
+    "artistGenres": [
+      "rock"
+    ],
     "venue": "barclays-center",
     "date": "2026-03-06"
   },
   {
     "slug": "playboi-carti-barclays-2026-03-27",
     "artist": "Playboi Carti",
-    "artistGenres": ["hip-hop"],
+    "artistGenres": [
+      "hip-hop"
+    ],
     "venue": "barclays-center",
     "date": "2026-03-27"
   },
   {
     "slug": "rosalia-barclays-2026-05-16",
     "artist": "ROSALÍA",
-    "artistGenres": ["pop"],
+    "artistGenres": [
+      "pop"
+    ],
     "venue": "barclays-center",
     "date": "2026-05-16"
   },
   {
     "slug": "ghost-ubs-arena-2025-08-02",
     "artist": "Ghost",
-    "artistGenres": ["rock"],
+    "artistGenres": [
+      "rock"
+    ],
     "venue": "ubs-arena",
     "date": "2025-08-02"
   },
   {
     "slug": "peso-pluma-ubs-arena-2025-11-28",
     "artist": "Peso Pluma",
-    "artistGenres": ["pop"],
+    "artistGenres": [
+      "pop"
+    ],
     "venue": "ubs-arena",
     "date": "2025-11-28"
   },
   {
     "slug": "ateez-ubs-arena-2026-01-31",
     "artist": "ATEEZ",
-    "artistGenres": ["pop"],
+    "artistGenres": [
+      "pop"
+    ],
     "venue": "ubs-arena",
     "date": "2026-01-31"
   },
   {
     "slug": "keshi-ubs-arena-2026-04-25",
     "artist": "keshi",
-    "artistGenres": ["r&b", "pop"],
+    "artistGenres": [
+      "r&b",
+      "pop"
+    ],
     "venue": "ubs-arena",
     "date": "2026-04-25"
   },
   {
     "slug": "andre-3000-radio-city-2025-10-11",
     "artist": "André 3000",
-    "artistGenres": ["jazz", "hip-hop"],
+    "artistGenres": [
+      "jazz",
+      "hip-hop"
+    ],
     "venue": "radio-city-music-hall",
     "date": "2025-10-11"
   },
   {
     "slug": "erykah-badu-radio-city-2025-11-07",
     "artist": "Erykah Badu",
-    "artistGenres": ["r&b"],
+    "artistGenres": [
+      "r&b"
+    ],
     "venue": "radio-city-music-hall",
     "date": "2025-11-07"
   },
   {
     "slug": "leon-bridges-radio-city-2026-01-16",
     "artist": "Leon Bridges",
-    "artistGenres": ["r&b"],
+    "artistGenres": [
+      "r&b"
+    ],
     "venue": "radio-city-music-hall",
     "date": "2026-01-16"
   },
   {
     "slug": "norah-jones-radio-city-2026-03-07",
     "artist": "Norah Jones",
-    "artistGenres": ["jazz"],
+    "artistGenres": [
+      "jazz"
+    ],
     "venue": "radio-city-music-hall",
     "date": "2026-03-07"
   },
   {
     "slug": "sigur-ros-radio-city-2026-04-17",
     "artist": "Sigur Rós",
-    "artistGenres": ["rock"],
+    "artistGenres": [
+      "rock"
+    ],
     "venue": "radio-city-music-hall",
     "date": "2026-04-17"
   },
   {
     "slug": "john-summit-brooklyn-mirage-2025-07-25",
     "artist": "John Summit",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "brooklyn-mirage",
     "date": "2025-07-25"
   },
   {
     "slug": "eric-prydz-brooklyn-mirage-2025-08-08",
     "artist": "Eric Prydz",
-    "artistGenres": ["electronic", "house"],
+    "artistGenres": [
+      "electronic",
+      "house"
+    ],
     "venue": "brooklyn-mirage",
     "date": "2025-08-08"
   },
   {
     "slug": "tale-of-us-brooklyn-mirage-2025-08-29",
     "artist": "Tale of Us",
-    "artistGenres": ["techno", "electronic"],
+    "artistGenres": [
+      "techno",
+      "electronic"
+    ],
     "venue": "brooklyn-mirage",
     "date": "2025-08-29"
   },
   {
     "slug": "dom-dolla-brooklyn-mirage-2025-09-13",
     "artist": "Dom Dolla",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "brooklyn-mirage",
     "date": "2025-09-13"
   },
   {
     "slug": "fisher-brooklyn-mirage-2026-06-26",
     "artist": "FISHER",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "brooklyn-mirage",
     "date": "2026-06-26"
   },
   {
     "slug": "fatboy-slim-k-bridge-2025-07-18",
     "artist": "Fatboy Slim",
-    "artistGenres": ["electronic", "house"],
+    "artistGenres": [
+      "electronic",
+      "house"
+    ],
     "venue": "under-the-k-bridge-park",
     "date": "2025-07-18"
   },
   {
     "slug": "the-chemical-brothers-k-bridge-2026-06-19",
     "artist": "The Chemical Brothers",
-    "artistGenres": ["electronic"],
+    "artistGenres": [
+      "electronic"
+    ],
     "venue": "under-the-k-bridge-park",
     "date": "2026-06-19"
   },
   {
     "slug": "boys-noize-knockdown-center-2025-10-04",
     "artist": "Boys Noize",
-    "artistGenres": ["techno", "electronic"],
+    "artistGenres": [
+      "techno",
+      "electronic"
+    ],
     "venue": "knockdown-center",
     "date": "2025-10-04"
   },
   {
     "slug": "vtss-knockdown-center-2025-12-27",
     "artist": "VTSS",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "knockdown-center",
     "date": "2025-12-27"
   },
   {
     "slug": "richie-hawtin-knockdown-center-2026-02-28",
     "artist": "Richie Hawtin",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "knockdown-center",
     "date": "2026-02-28"
   },
   {
     "slug": "ki-ki-knockdown-center-2026-04-25",
     "artist": "KI/KI",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "knockdown-center",
     "date": "2026-04-25"
   },
   {
     "slug": "rezz-great-hall-2025-10-18",
     "artist": "Rezz",
-    "artistGenres": ["electronic"],
+    "artistGenres": [
+      "electronic"
+    ],
     "venue": "great-hall-avant-gardner",
     "date": "2025-10-18"
   },
   {
     "slug": "mathame-great-hall-2025-12-20",
     "artist": "Mathame",
-    "artistGenres": ["techno", "electronic"],
+    "artistGenres": [
+      "techno",
+      "electronic"
+    ],
     "venue": "great-hall-avant-gardner",
     "date": "2025-12-20"
   },
   {
     "slug": "mind-against-great-hall-2026-01-23",
     "artist": "Mind Against",
-    "artistGenres": ["techno", "electronic"],
+    "artistGenres": [
+      "techno",
+      "electronic"
+    ],
     "venue": "great-hall-avant-gardner",
     "date": "2026-01-23"
   },
   {
     "slug": "adam-beyer-great-hall-2026-03-21",
     "artist": "Adam Beyer",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "great-hall-avant-gardner",
     "date": "2026-03-21"
   },
   {
     "slug": "the-marias-terminal-5-2025-09-12",
     "artist": "The Marías",
-    "artistGenres": ["indie", "pop"],
+    "artistGenres": [
+      "indie",
+      "pop"
+    ],
     "venue": "terminal-5",
     "date": "2025-09-12"
   },
   {
     "slug": "jorja-smith-terminal-5-2025-10-25",
     "artist": "Jorja Smith",
-    "artistGenres": ["r&b"],
+    "artistGenres": [
+      "r&b"
+    ],
     "venue": "terminal-5",
     "date": "2025-10-25"
   },
   {
     "slug": "little-simz-terminal-5-2025-11-28",
     "artist": "Little Simz",
-    "artistGenres": ["hip-hop"],
+    "artistGenres": [
+      "hip-hop"
+    ],
     "venue": "terminal-5",
     "date": "2025-11-28"
   },
   {
     "slug": "denzel-curry-terminal-5-2026-01-17",
     "artist": "Denzel Curry",
-    "artistGenres": ["hip-hop"],
+    "artistGenres": [
+      "hip-hop"
+    ],
     "venue": "terminal-5",
     "date": "2026-01-17"
   },
   {
     "slug": "marina-terminal-5-2026-02-06",
     "artist": "MARINA",
-    "artistGenres": ["pop"],
+    "artistGenres": [
+      "pop"
+    ],
     "venue": "terminal-5",
     "date": "2026-02-06"
   },
   {
     "slug": "purple-disco-machine-terminal-5-2026-03-28",
     "artist": "Purple Disco Machine",
-    "artistGenres": ["house", "electronic"],
+    "artistGenres": [
+      "house",
+      "electronic"
+    ],
     "venue": "terminal-5",
     "date": "2026-03-28"
   },
   {
     "slug": "pinkpantheress-webster-hall-2025-10-03",
     "artist": "PinkPantheress",
-    "artistGenres": ["pop", "electronic"],
+    "artistGenres": [
+      "pop",
+      "electronic"
+    ],
     "venue": "webster-hall",
     "date": "2025-10-03"
   },
   {
     "slug": "skream-webster-hall-2025-11-01",
     "artist": "Skream",
-    "artistGenres": ["electronic", "house"],
+    "artistGenres": [
+      "electronic",
+      "house"
+    ],
     "venue": "webster-hall",
     "date": "2025-11-01"
   },
   {
     "slug": "jpegmafia-webster-hall-2025-12-13",
     "artist": "JPEGMAFIA",
-    "artistGenres": ["hip-hop"],
+    "artistGenres": [
+      "hip-hop"
+    ],
     "venue": "webster-hall",
     "date": "2025-12-13"
   },
   {
     "slug": "mall-grab-racket-2026-02-13",
     "artist": "Mall Grab",
-    "artistGenres": ["house", "techno"],
+    "artistGenres": [
+      "house",
+      "techno"
+    ],
     "venue": "racket-nyc",
     "date": "2026-02-13"
   },
   {
     "slug": "confidence-man-webster-hall-2026-03-14",
     "artist": "Confidence Man",
-    "artistGenres": ["pop", "electronic"],
+    "artistGenres": [
+      "pop",
+      "electronic"
+    ],
     "venue": "webster-hall",
     "date": "2026-03-14"
   },
   {
     "slug": "viagra-boys-webster-hall-2026-04-10",
     "artist": "Viagra Boys",
-    "artistGenres": ["rock"],
+    "artistGenres": [
+      "rock"
+    ],
     "venue": "webster-hall",
     "date": "2026-04-10"
   },
   {
     "slug": "idles-brooklyn-steel-2025-10-09",
     "artist": "IDLES",
-    "artistGenres": ["rock"],
+    "artistGenres": [
+      "rock"
+    ],
     "venue": "brooklyn-steel",
     "date": "2025-10-09"
   },
   {
     "slug": "ezra-collective-brooklyn-steel-2025-10-30",
     "artist": "Ezra Collective",
-    "artistGenres": ["jazz"],
+    "artistGenres": [
+      "jazz"
+    ],
     "venue": "brooklyn-steel",
     "date": "2025-10-30"
   },
   {
     "slug": "parquet-courts-brooklyn-steel-2025-11-26",
     "artist": "Parquet Courts",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "brooklyn-steel",
     "date": "2025-11-26"
   },
   {
     "slug": "geese-brooklyn-steel-2025-12-19",
     "artist": "Geese",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "brooklyn-steel",
     "date": "2025-12-19"
   },
   {
     "slug": "diiv-brooklyn-steel-2026-02-27",
     "artist": "DIIV",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "brooklyn-steel",
     "date": "2026-02-27"
   },
   {
     "slug": "freddie-gibbs-brooklyn-steel-2026-05-01",
     "artist": "Freddie Gibbs",
-    "artistGenres": ["hip-hop"],
+    "artistGenres": [
+      "hip-hop"
+    ],
     "venue": "brooklyn-steel",
     "date": "2026-05-01"
   },
   {
     "slug": "king-gizzard-kings-theatre-2025-08-21",
     "artist": "King Gizzard & the Lizard Wizard",
-    "artistGenres": ["rock"],
+    "artistGenres": [
+      "rock"
+    ],
     "venue": "kings-theatre",
     "date": "2025-08-21"
   },
   {
     "slug": "mitski-kings-theatre-2025-09-25",
     "artist": "Mitski",
-    "artistGenres": ["indie"],
+    "artistGenres": [
+      "indie"
+    ],
     "venue": "kings-theatre",
     "date": "2025-09-25"
   },
   {
-    "slug": "slowdive-kings-theatre-2025-10-16",
+    "slug": "slowdive-kings-theatre-2025-10-17",
     "artist": "Slowdive",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "kings-theatre",
-    "date": "2025-10-16"
+    "date": "2025-10-17"
   },
   {
     "slug": "thundercat-kings-theatre-2026-02-21",
     "artist": "Thundercat",
-    "artistGenres": ["jazz", "r&b"],
+    "artistGenres": [
+      "jazz",
+      "r&b"
+    ],
     "venue": "kings-theatre",
     "date": "2026-02-21"
   },
   {
     "slug": "beach-house-kings-theatre-2026-04-04",
     "artist": "Beach House",
-    "artistGenres": ["indie"],
+    "artistGenres": [
+      "indie"
+    ],
     "venue": "kings-theatre",
     "date": "2026-04-04"
   },
   {
     "slug": "khruangbin-kings-theatre-2026-05-29",
     "artist": "Khruangbin",
-    "artistGenres": ["indie", "r&b"],
+    "artistGenres": [
+      "indie",
+      "r&b"
+    ],
     "venue": "kings-theatre",
     "date": "2026-05-29"
   },
   {
     "slug": "men-i-trust-brooklyn-paramount-2025-10-23",
     "artist": "Men I Trust",
-    "artistGenres": ["indie"],
+    "artistGenres": [
+      "indie"
+    ],
     "venue": "brooklyn-paramount",
     "date": "2025-10-23"
   },
   {
     "slug": "clairo-brooklyn-paramount-2025-11-06",
     "artist": "Clairo",
-    "artistGenres": ["indie", "pop"],
+    "artistGenres": [
+      "indie",
+      "pop"
+    ],
     "venue": "brooklyn-paramount",
     "date": "2025-11-06"
   },
   {
     "slug": "kelela-brooklyn-paramount-2025-12-04",
     "artist": "Kelela",
-    "artistGenres": ["r&b", "electronic"],
+    "artistGenres": [
+      "r&b",
+      "electronic"
+    ],
     "venue": "brooklyn-paramount",
     "date": "2025-12-04"
   },
   {
     "slug": "unknown-mortal-orchestra-brooklyn-paramount-2026-01-15",
     "artist": "Unknown Mortal Orchestra",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "brooklyn-paramount",
     "date": "2026-01-15"
   },
   {
     "slug": "toro-y-moi-brooklyn-paramount-2026-02-19",
     "artist": "Toro y Moi",
-    "artistGenres": ["indie", "electronic"],
+    "artistGenres": [
+      "indie",
+      "electronic"
+    ],
     "venue": "brooklyn-paramount",
     "date": "2026-02-19"
   },
   {
     "slug": "beabadoobee-brooklyn-paramount-2026-03-06",
     "artist": "beabadoobee",
-    "artistGenres": ["indie", "pop"],
+    "artistGenres": [
+      "indie",
+      "pop"
+    ],
     "venue": "brooklyn-paramount",
     "date": "2026-03-06"
   },
   {
     "slug": "rodhad-basement-2025-08-09",
     "artist": "Rødhåd",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "basement",
     "date": "2025-08-09"
   },
   {
     "slug": "anetha-basement-2025-09-27",
     "artist": "Anetha",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "basement",
     "date": "2025-09-27"
   },
   {
     "slug": "freddy-k-basement-2025-10-25",
     "artist": "Freddy K",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "basement",
     "date": "2025-10-25"
   },
   {
     "slug": "spfdj-basement-2026-01-31",
     "artist": "SPFDJ",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "basement",
     "date": "2026-01-31"
   },
   {
     "slug": "fadi-mohem-basement-2026-02-14",
     "artist": "Fadi Mohem",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "basement",
     "date": "2026-02-14"
   },
   {
     "slug": "hector-oaks-basement-2026-03-07",
     "artist": "Héctor Oaks",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "basement",
     "date": "2026-03-07"
   },
   {
     "slug": "estella-boersma-basement-2026-05-09",
     "artist": "Estella Boersma",
-    "artistGenres": ["techno"],
+    "artistGenres": [
+      "techno"
+    ],
     "venue": "basement",
     "date": "2026-05-09"
   },
   {
     "slug": "hunee-nowadays-2025-08-17",
     "artist": "Hunee",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "nowadays",
     "date": "2025-08-17"
   },
   {
     "slug": "antal-nowadays-2025-10-12",
     "artist": "Antal",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "nowadays",
     "date": "2025-10-12"
   },
   {
     "slug": "octo-octa-nowadays-2025-11-16",
     "artist": "Octo Octa",
-    "artistGenres": ["house", "electronic"],
+    "artistGenres": [
+      "house",
+      "electronic"
+    ],
     "venue": "nowadays",
     "date": "2025-11-16"
   },
   {
     "slug": "ben-ufo-nowadays-2026-01-18",
     "artist": "Ben UFO",
-    "artistGenres": ["electronic", "house"],
+    "artistGenres": [
+      "electronic",
+      "house"
+    ],
     "venue": "nowadays",
     "date": "2026-01-18"
   },
   {
     "slug": "call-super-nowadays-2026-03-15",
     "artist": "Call Super",
-    "artistGenres": ["electronic"],
+    "artistGenres": [
+      "electronic"
+    ],
     "venue": "nowadays",
     "date": "2026-03-15"
   },
   {
     "slug": "eris-drew-nowadays-2026-05-17",
     "artist": "Eris Drew",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "nowadays",
     "date": "2026-05-17"
   },
   {
     "slug": "moxie-nowadays-2026-06-14",
     "artist": "Moxie",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "nowadays",
     "date": "2026-06-14"
   },
   {
     "slug": "dj-boring-good-room-2025-09-06",
     "artist": "DJ Boring",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "good-room",
     "date": "2025-09-06"
   },
   {
     "slug": "avalon-emerson-good-room-2025-10-18",
     "artist": "Avalon Emerson",
-    "artistGenres": ["house", "techno"],
+    "artistGenres": [
+      "house",
+      "techno"
+    ],
     "venue": "good-room",
     "date": "2025-10-18"
   },
   {
     "slug": "haai-good-room-2025-12-06",
     "artist": "HAAi",
-    "artistGenres": ["techno", "electronic"],
+    "artistGenres": [
+      "techno",
+      "electronic"
+    ],
     "venue": "good-room",
     "date": "2025-12-06"
   },
   {
     "slug": "horse-meat-disco-good-room-2026-01-31",
     "artist": "Horse Meat Disco",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "good-room",
     "date": "2026-01-31"
   },
   {
     "slug": "jayda-g-good-room-2026-02-07",
     "artist": "Jayda G",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "good-room",
     "date": "2026-02-07"
   },
   {
     "slug": "dj-seinfeld-good-room-2026-04-11",
     "artist": "DJ Seinfeld",
-    "artistGenres": ["house", "electronic"],
+    "artistGenres": [
+      "house",
+      "electronic"
+    ],
     "venue": "good-room",
     "date": "2026-04-11"
   },
   {
     "slug": "palms-trax-public-records-2025-08-30",
     "artist": "Palms Trax",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "public-records",
     "date": "2025-08-30"
   },
   {
     "slug": "theo-parrish-public-records-2025-11-29",
     "artist": "Theo Parrish",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "public-records",
     "date": "2025-11-29"
   },
   {
     "slug": "dj-harvey-public-records-2025-12-31",
     "artist": "DJ Harvey",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "public-records",
     "date": "2025-12-31"
   },
   {
     "slug": "moodymann-public-records-2026-02-14",
     "artist": "Moodymann",
-    "artistGenres": ["house"],
+    "artistGenres": [
+      "house"
+    ],
     "venue": "public-records",
     "date": "2026-02-14"
   },
   {
     "slug": "sherelle-public-records-2026-03-27",
     "artist": "SHERELLE",
-    "artistGenres": ["electronic"],
+    "artistGenres": [
+      "electronic"
+    ],
     "venue": "public-records",
     "date": "2026-03-27"
   },
   {
     "slug": "job-jobse-public-records-2026-06-06",
     "artist": "Job Jobse",
-    "artistGenres": ["house", "electronic"],
+    "artistGenres": [
+      "house",
+      "electronic"
+    ],
     "venue": "public-records",
     "date": "2026-06-06"
   },
   {
     "slug": "two-shell-elsewhere-2025-10-17",
     "artist": "Two Shell",
-    "artistGenres": ["electronic"],
+    "artistGenres": [
+      "electronic"
+    ],
     "venue": "elsewhere-hall",
     "date": "2025-10-17"
   },
   {
     "slug": "salute-elsewhere-2025-11-14",
     "artist": "salute",
-    "artistGenres": ["electronic", "house"],
+    "artistGenres": [
+      "electronic",
+      "house"
+    ],
     "venue": "elsewhere-hall",
     "date": "2025-11-14"
   },
   {
     "slug": "eartheater-elsewhere-2025-12-18",
     "artist": "Eartheater",
-    "artistGenres": ["electronic"],
+    "artistGenres": [
+      "electronic"
+    ],
     "venue": "elsewhere-hall",
     "date": "2025-12-18"
   },
   {
     "slug": "snow-strippers-elsewhere-2026-01-09",
     "artist": "Snow Strippers",
-    "artistGenres": ["electronic"],
+    "artistGenres": [
+      "electronic"
+    ],
     "venue": "elsewhere-hall",
     "date": "2026-01-09"
   },
   {
     "slug": "sega-bodega-elsewhere-2026-02-27",
     "artist": "Sega Bodega",
-    "artistGenres": ["electronic", "pop"],
+    "artistGenres": [
+      "electronic",
+      "pop"
+    ],
     "venue": "elsewhere-hall",
     "date": "2026-02-27"
   },
   {
     "slug": "yves-tumor-elsewhere-2026-03-20",
     "artist": "Yves Tumor",
-    "artistGenres": ["rock", "electronic"],
+    "artistGenres": [
+      "rock",
+      "electronic"
+    ],
     "venue": "elsewhere-hall",
     "date": "2026-03-20"
   },
   {
     "slug": "joy-orbison-elsewhere-2026-04-17",
     "artist": "Joy Orbison",
-    "artistGenres": ["electronic", "house"],
+    "artistGenres": [
+      "electronic",
+      "house"
+    ],
     "venue": "elsewhere-hall",
     "date": "2026-04-17"
   },
   {
     "slug": "they-are-gutting-a-body-of-water-bowery-ballroom-2025-09-18",
     "artist": "They Are Gutting a Body of Water",
-    "artistGenres": ["rock", "indie"],
+    "artistGenres": [
+      "rock",
+      "indie"
+    ],
     "venue": "bowery-ballroom",
     "date": "2025-09-18"
   },
   {
     "slug": "wednesday-bowery-ballroom-2025-10-08",
     "artist": "Wednesday",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "bowery-ballroom",
     "date": "2025-10-08"
   },
   {
     "slug": "momma-bowery-ballroom-2025-11-13",
     "artist": "Momma",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "bowery-ballroom",
     "date": "2025-11-13"
   },
   {
     "slug": "hotline-tnt-bowery-ballroom-2025-12-11",
     "artist": "Hotline TNT",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "bowery-ballroom",
     "date": "2025-12-11"
   },
   {
     "slug": "frankie-cosmos-bowery-ballroom-2026-02-12",
     "artist": "Frankie Cosmos",
-    "artistGenres": ["indie"],
+    "artistGenres": [
+      "indie"
+    ],
     "venue": "bowery-ballroom",
     "date": "2026-02-12"
   },
   {
     "slug": "snail-mail-bowery-ballroom-2026-04-09",
     "artist": "Snail Mail",
-    "artistGenres": ["indie"],
+    "artistGenres": [
+      "indie"
+    ],
     "venue": "bowery-ballroom",
     "date": "2026-04-09"
   },
   {
     "slug": "greg-mendez-bowery-ballroom-2026-05-14",
     "artist": "Greg Mendez",
-    "artistGenres": ["indie"],
+    "artistGenres": [
+      "indie"
+    ],
     "venue": "bowery-ballroom",
     "date": "2026-05-14"
   },
   {
     "slug": "tops-babys-all-right-2025-08-14",
     "artist": "TOPS",
-    "artistGenres": ["indie", "pop"],
+    "artistGenres": [
+      "indie",
+      "pop"
+    ],
     "venue": "babys-all-right",
     "date": "2025-08-14"
   },
   {
     "slug": "fcukers-babys-all-right-2025-09-11",
     "artist": "Fcukers",
-    "artistGenres": ["electronic", "indie"],
+    "artistGenres": [
+      "electronic",
+      "indie"
+    ],
     "venue": "babys-all-right",
     "date": "2025-09-11"
   },
   {
     "slug": "being-dead-babys-all-right-2025-10-02",
     "artist": "Being Dead",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "babys-all-right",
     "date": "2025-10-02"
   },
   {
     "slug": "sextile-babys-all-right-2025-12-04",
     "artist": "Sextile",
-    "artistGenres": ["electronic", "rock"],
+    "artistGenres": [
+      "electronic",
+      "rock"
+    ],
     "venue": "babys-all-right",
     "date": "2025-12-04"
   },
   {
     "slug": "font-babys-all-right-2026-02-05",
     "artist": "Font",
-    "artistGenres": ["rock", "electronic"],
+    "artistGenres": [
+      "rock",
+      "electronic"
+    ],
     "venue": "babys-all-right",
     "date": "2026-02-05"
   },
   {
     "slug": "cryogeyser-babys-all-right-2026-03-12",
     "artist": "Cryogeyser",
-    "artistGenres": ["indie"],
+    "artistGenres": [
+      "indie"
+    ],
     "venue": "babys-all-right",
     "date": "2026-03-12"
   },
   {
     "slug": "yhwh-nailgun-babys-all-right-2026-04-23",
     "artist": "YHWH Nailgun",
-    "artistGenres": ["rock"],
+    "artistGenres": [
+      "rock"
+    ],
     "venue": "babys-all-right",
     "date": "2026-04-23"
   },
   {
     "slug": "robert-glasper-blue-note-2025-10-05",
     "artist": "Robert Glasper",
-    "artistGenres": ["jazz", "r&b"],
+    "artistGenres": [
+      "jazz",
+      "r&b"
+    ],
     "venue": "blue-note",
     "date": "2025-10-05"
   },
   {
     "slug": "immanuel-wilkins-blue-note-2025-11-20",
     "artist": "Immanuel Wilkins",
-    "artistGenres": ["jazz"],
+    "artistGenres": [
+      "jazz"
+    ],
     "venue": "blue-note",
     "date": "2025-11-20"
   },
   {
     "slug": "christian-mcbride-blue-note-2025-12-10",
     "artist": "Christian McBride",
-    "artistGenres": ["jazz"],
+    "artistGenres": [
+      "jazz"
+    ],
     "venue": "blue-note",
     "date": "2025-12-10"
   },
   {
     "slug": "samara-joy-blue-note-2026-01-08",
     "artist": "Samara Joy",
-    "artistGenres": ["jazz"],
+    "artistGenres": [
+      "jazz"
+    ],
     "venue": "blue-note",
     "date": "2026-01-08"
   },
   {
     "slug": "domi-jd-beck-blue-note-2026-02-26",
     "artist": "DOMi & JD BECK",
-    "artistGenres": ["jazz"],
+    "artistGenres": [
+      "jazz"
+    ],
     "venue": "blue-note",
     "date": "2026-02-26"
   },
   {
     "slug": "brad-mehldau-blue-note-2026-03-05",
     "artist": "Brad Mehldau",
-    "artistGenres": ["jazz"],
+    "artistGenres": [
+      "jazz"
+    ],
     "venue": "blue-note",
     "date": "2026-03-05"
   },
   {
     "slug": "makaya-mccraven-blue-note-2026-04-30",
     "artist": "Makaya McCraven",
-    "artistGenres": ["jazz"],
+    "artistGenres": [
+      "jazz"
+    ],
     "venue": "blue-note",
     "date": "2026-04-30"
   },
   {
     "slug": "panchiko-music-hall-2025-09-04",
     "artist": "Panchiko",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "music-hall-of-williamsburg",
     "date": "2025-09-04"
   },
   {
     "slug": "nation-of-language-music-hall-2025-10-30",
     "artist": "Nation of Language",
-    "artistGenres": ["indie", "electronic"],
+    "artistGenres": [
+      "indie",
+      "electronic"
+    ],
     "venue": "music-hall-of-williamsburg",
     "date": "2025-10-30"
   },
   {
     "slug": "blondshell-music-hall-2025-11-06",
     "artist": "Blondshell",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "music-hall-of-williamsburg",
     "date": "2025-11-06"
   },
   {
     "slug": "ekkstacy-music-hall-2026-01-22",
     "artist": "EKKSTACY",
-    "artistGenres": ["indie", "rock"],
+    "artistGenres": [
+      "indie",
+      "rock"
+    ],
     "venue": "music-hall-of-williamsburg",
     "date": "2026-01-22"
   },
   {
     "slug": "jockstrap-music-hall-2026-02-20",
     "artist": "Jockstrap",
-    "artistGenres": ["electronic", "indie"],
+    "artistGenres": [
+      "electronic",
+      "indie"
+    ],
     "venue": "music-hall-of-williamsburg",
     "date": "2026-02-20"
   },
   {
     "slug": "lifeguard-music-hall-2026-03-19",
     "artist": "Lifeguard",
-    "artistGenres": ["rock", "indie"],
+    "artistGenres": [
+      "rock",
+      "indie"
+    ],
     "venue": "music-hall-of-williamsburg",
     "date": "2026-03-19"
   }

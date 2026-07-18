@@ -26,7 +26,7 @@ const ROOT = join(__dir, '..');
 const NAMESPACE = '9f2c1a7e-5b83-4d64-a1c9-3e07f6d24b58'; // fixed: uuidv5(slug) is stable forever
 const DEMO_NOW = new Date('2026-07-18T00:00:00Z'); // pinned demo date (resolutions.md)
 const SEED_CUTOFF = '2026-07-17 00:00:00+00'; // rows after this are "live" (demo:reset wipes them)
-const DATE_MIN = '2025-07-01';
+const DATE_MIN = '2025-05-01'; // widened: real-world swaps (Four Tet, Fontaines, Lane 8) land May–Jun '25
 const DATE_MAX = '2026-07-17';
 const SPACING = 32; // Elo points between adjacent seeded ranks (engine SPACING)
 const BASELINE = 1500; // ladder scores are centered here
@@ -180,19 +180,19 @@ if (dex.ladder.includes(FRED)) fail('Dex must not share Fred');
 // Maya's full-ladder positions for every shared show are engine-pinned
 // (fixture-final.md §3) — the taste-match tests in src/engine assume them.
 const MAYA_CANON: Record<string, number> = {
-  'rufus-du-sol-msg-2025-10-17': 1,
-  'anyma-brooklyn-mirage-2025-08-23': 2,
-  'bicep-knockdown-center-2025-11-14': 3,
-  'lane-8-brooklyn-mirage-2025-09-05': 4,
-  'fontaines-dc-brooklyn-steel-2025-11-21': 5,
+  'rufus-du-sol-msg-2026-06-26': 1,
+  'bicep-knockdown-center-2025-11-14': 2,
+  'fontaines-dc-hammerstein-2025-05-16': 3,
+  'lane-8-k-bridge-2025-06-14': 4,
+  'anyma-brooklyn-mirage-2025-08-23': 5,
   [FRED]: 6,
-  'jamie-xx-forest-hills-2025-09-27': 8,
-  'peggy-gou-great-hall-2026-02-14': 11,
-  'sammy-virji-webster-hall-2025-12-05': 14,
-  'four-tet-k-bridge-2026-06-06': 21,
-  'dj-koze-nowadays-2026-04-18': 24,
+  'jamie-xx-k-bridge-2025-08-01': 9,
+  'peggy-gou-k-bridge-2026-05-09': 10,
+  'sammy-virji-webster-hall-2026-05-08': 14,
+  'four-tet-k-bridge-2025-05-17': 21,
+  'dj-koze-nowadays-2026-04-18': 25,
   'helena-hauff-basement-2025-12-12': 26,
-  'charli-xcx-barclays-2025-10-04': 29,
+  'charli-xcx-music-hall-williamsburg-2026-07-10': 29,
 };
 for (const [slug, pos] of Object.entries(MAYA_CANON))
   if (maya.ladder[pos - 1] !== slug)

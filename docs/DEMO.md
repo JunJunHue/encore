@@ -56,8 +56,8 @@ The pairwise cards appear. Narrate each as a gut call and tap:
 | --- | ------------------------------- | ---------- | ------------------------------------------------------- |
 | 1   | Fontaines D.C. @ Brooklyn Steel | **Fred**   | "Better than Fontaines? Easily."                        |
 | 2   | Bicep @ Knockdown Center        | **Bicep**  | "Better than Bicep's AV show? …no, that was religious." |
-| 3   | Jamie xx @ Forest Hills         | **Fred**   | "Better than Jamie xx at the same venue? Yeah."         |
-| 4   | Lane 8 @ Brooklyn Mirage        | **Lane 8** | "Lane 8 at Mirage still wins."                          |
+| 3   | Jamie xx @ Under the K Bridge   | **Fred**   | "Better than Jamie xx under the K Bridge? Yeah."        |
+| 4   | Lane 8 @ Under the K Bridge     | **Lane 8** | "Lane 8 under the K Bridge still wins."                 |
 
 **Pause and let the slot-in animation land Fred at #6.** Don't talk over it.
 

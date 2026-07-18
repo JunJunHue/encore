@@ -118,7 +118,7 @@ export default function LogScreen() {
   };
 
   return (
-    <Screen title="Log a show" subtitle="NYC · Jul '25 – Jul '26">
+    <Screen title="Log a show" subtitle="NYC · May '25 – Jul '26">
       <SearchInput value={text} onChange={setText} placeholder="Search artists…" />
 
       {search.isLoading && <SkeletonList />}
@@ -132,7 +132,7 @@ export default function LogScreen() {
       )}
 
       {search.isSuccess && results.length === 0 && (
-        <EmptyState icon="🕳️" title="No shows found" body="MVP covers NYC, Jul '25 – Jul '26." />
+        <EmptyState icon="🕳️" title="No shows found" body="MVP covers NYC, May '25 – Jul '26." />
       )}
 
       {results.length > 0 && (
