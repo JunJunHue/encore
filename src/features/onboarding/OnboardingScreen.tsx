@@ -10,9 +10,9 @@
  */
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate, useSearchParams } from 'react-router-dom';
 import { Avatar, Button, Chip, ShowCard, eventToShowCardData } from '@/components';
-import { upsertProfile, type Profile } from '@/lib/auth';
+import { NameTakenError, loginWithName, upsertProfile, type Profile } from '@/lib/auth';
 import { qk, queryClient } from '@/lib/queryClient';
 import { useEventSearch, useLadder, useProfile, useSession, type EventJoin } from '@/lib/hooks';
 import { SPRING } from '@/lib/motion';
@@ -101,24 +101,39 @@ function OnboardingSplash() {
   );
 }
 
-function NameStep({ userId }: { userId: string }) {
+function NameStep({ userId, switching }: { userId: string; switching: boolean }) {
   const navigate = useNavigate();
   const [name, setName] = useState('');
+  const [pin, setPin] = useState('');
   const [busy, setBusy] = useState<'go' | 'skip' | null>(null);
   const [error, setError] = useState<string | null>(null);
   const trimmed = name.trim();
+  const ready = trimmed.length >= 2 && pin.length >= 6;
 
-  const submit = async (displayName: string, kind: 'go' | 'skip') => {
+  const submit = async (kind: 'go' | 'skip') => {
     if (busy) return;
     setBusy(kind);
     setError(null);
     try {
-      const profile = await upsertProfile(displayName);
+      if (kind === 'go') {
+        // Name + PIN = the account. Full reload so the AuthGate re-boots
+        // with the (possibly different) signed-in user and fresh caches.
+        await loginWithName(trimmed, pin);
+        window.location.assign('/welcome');
+        return;
+      }
+      // Guest: device-only anonymous ladder (existing behavior).
+      const profile = await upsertProfile(randomGuestName());
       queryClient.setQueryData(qk.profile(userId), profile);
-      // kind 'go': the parent re-renders into the backfill picker off the cache.
-      if (kind === 'skip') navigate('/', { replace: true });
+      navigate('/', { replace: true });
     } catch (e) {
-      setError(e instanceof Error ? e.message : 'Something went wrong — try again.');
+      setError(
+        e instanceof NameTakenError
+          ? e.message
+          : e instanceof Error
+            ? e.message
+            : 'Something went wrong — try again.',
+      );
       setBusy(null);
     }
   };
@@ -148,13 +163,29 @@ function NameStep({ userId }: { userId: string }) {
             value={name}
             onChange={(e) => setName(e.target.value)}
             onKeyDown={(e) => {
-              if (e.key === 'Enter' && trimmed.length >= 2) void submit(trimmed, 'go');
+              if (e.key === 'Enter' && ready) void submit('go');
             }}
             placeholder="What do your friends call you?"
             autoFocus
             maxLength={32}
             className="w-full rounded-xl border border-line bg-surface px-4 py-3.5 text-center text-lg font-semibold text-ink placeholder:text-base placeholder:font-normal placeholder:text-ink-faint focus:border-accent/60 focus:outline-none"
           />
+          <input
+            value={pin}
+            onChange={(e) => setPin(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && ready) void submit('go');
+            }}
+            type="password"
+            autoComplete="current-password"
+            placeholder="PIN (6+ characters)"
+            maxLength={64}
+            className="w-full rounded-xl border border-line bg-surface px-4 py-3.5 text-center text-base font-semibold text-ink placeholder:font-normal placeholder:text-ink-faint focus:border-accent/60 focus:outline-none"
+          />
+          <p className="max-w-[300px] text-xs leading-relaxed text-ink-faint">
+            New name? This creates your account. Coming back? The same name + PIN opens your
+            ladder on any device.
+          </p>
           <div className="flex flex-wrap justify-center gap-2">
             {SUGGESTIONS.map((s) => (
               <Chip key={s} selected={name === s} onClick={() => setName(s)}>
@@ -172,20 +203,26 @@ function NameStep({ userId }: { userId: string }) {
           block
           size="lg"
           loading={busy === 'go'}
-          disabled={trimmed.length < 2 || busy === 'skip'}
-          onClick={() => void submit(trimmed, 'go')}
+          disabled={!ready || busy === 'skip'}
+          onClick={() => void submit('go')}
         >
           That&apos;s me
         </Button>
-        <Button
-          block
-          variant="ghost"
-          loading={busy === 'skip'}
-          disabled={busy === 'go'}
-          onClick={() => void submit(randomGuestName(), 'skip')}
-        >
-          Skip for now
-        </Button>
+        {switching ? (
+          <Button block variant="ghost" disabled={busy === 'go'} onClick={() => navigate('/')}>
+            Cancel
+          </Button>
+        ) : (
+          <Button
+            block
+            variant="ghost"
+            loading={busy === 'skip'}
+            disabled={busy === 'go'}
+            onClick={() => void submit('skip')}
+          >
+            Skip for now
+          </Button>
+        )}
       </div>
     </div>
   );
@@ -317,6 +354,8 @@ function BackfillPicker({ profile }: { profile: Profile }) {
 
 export default function OnboardingScreen() {
   const { userId } = useSession();
+  const [params] = useSearchParams();
+  const switching = params.has('switch'); // /welcome?switch=1 → force the login form
   const profileQuery = useProfile(userId);
   const ladderQuery = useLadder(userId);
 
@@ -325,8 +364,9 @@ export default function OnboardingScreen() {
   const profile = profileQuery.data ?? null;
   const ladder = ladderQuery.data ?? [];
 
+  if (switching) return <NameStep userId={userId} switching />;
   // Route guard (resolutions.md): already onboarded → straight to the ladder.
   if (profile && ladder.length > 0) return <Navigate to="/" replace />;
   if (profile) return <BackfillPicker profile={profile} />;
-  return <NameStep userId={userId} />;
+  return <NameStep userId={userId} switching={false} />;
 }

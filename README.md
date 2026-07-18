@@ -59,8 +59,19 @@ The seeded demo user "Andrew" (15-show ladder, 87% match with Maya) has a passwo
 - Open the app with **`?as=demo`** (e.g. `http://localhost:5173/?as=demo`) — it signs in as
   **`demo@encore.app`** with password **`encore-demo-2026`** (constants `DEMO_EMAIL` /
   `DEMO_PASSWORD` in `src/lib/auth.ts`; the credential is created by `seed/build-seed.ts`).
-- A plain visit (no query param) gets an anonymous session + name picker + 5-best backfill —
-  the judge path. New users auto-follow the seeded friends so Compare is never empty.
+- A plain visit (no query param) gets an anonymous session + the name-login screen + 5-best
+  backfill — the judge path. New users auto-follow the seeded friends so Compare is never empty.
+
+## Name login (name + PIN = your account)
+
+Your display name is your identity: pick a name and a PIN (6+ chars) and the account is
+portable — the same name + PIN opens the same ladder on any device ("Not you? Log in" link on
+the Compare tab switches accounts). Names are unique case-insensitively (DB index). Sessions
+stay Supabase-anonymous; the `login_with_name` RPC (migration `0003_name_login.sql`) verifies a
+bcrypt PIN hash (stored in the client-inaccessible `profile_pins` table) and re-parents the
+account's rows onto the current session — so an account lives on one device at a time, and
+logging in elsewhere moves it. "Skip for now" still gives a device-only guest ladder; claiming
+a name later keeps anything the guest logged.
 
 Before presenting, read the full [demo runbook](docs/DEMO.md) — including `npm run demo:reset`
 and the wifi-death fallback.

@@ -116,9 +116,23 @@ function FriendsIndex() {
               </ul>
             </section>
           )}
+          <SwitchAccountLink />
         </>
       )}
     </Screen>
+  );
+}
+
+function SwitchAccountLink() {
+  const navigate = useNavigate();
+  return (
+    <button
+      type="button"
+      onClick={() => void navigate('/welcome?switch=1')}
+      className="mx-auto block pb-8 text-xs font-semibold text-ink-faint underline-offset-2 active:underline"
+    >
+      Not you? Log in with your name + PIN
+    </button>
   );
 }
 

@@ -368,6 +368,14 @@ export interface Database {
       };
     };
     Functions: {
+      login_with_name: {
+        Args: { p_name: string; p_pin: string };
+        Returns: undefined;
+      };
+      set_pin: {
+        Args: { p_pin: string };
+        Returns: undefined;
+      };
       insert_ranked_log: {
         Args: {
           p_event_id: string;
