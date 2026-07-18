@@ -110,8 +110,8 @@ export default function LogScreen() {
   const debounced = useDebouncedValue(text, 200);
   const search = useEventSearch(debounced);
 
-  const active = debounced.trim().length >= 2;
-  const results: EventJoin[] = active ? (search.data ?? []) : [];
+  const browsing = debounced.trim().length === 0;
+  const results: EventJoin[] = search.data ?? [];
 
   const openRankFlow = (event: EventJoin) => {
     navigate(`/rank/${event.id}`, { state: { event } });
@@ -121,17 +121,9 @@ export default function LogScreen() {
     <Screen title="Log a show" subtitle="NYC · Jul '25 – Jul '26">
       <SearchInput value={text} onChange={setText} placeholder="Search artists…" />
 
-      {!active && (
-        <EmptyState
-          icon="🎤"
-          title="Who did you see?"
-          body="Search any artist — every NYC show from Jul '25 to Jul '26 is in here."
-        />
-      )}
+      {search.isLoading && <SkeletonList />}
 
-      {active && search.isLoading && <SkeletonList />}
-
-      {active && search.isError && (
+      {search.isError && (
         <EmptyState
           icon="📡"
           title="Search glitched"
@@ -139,7 +131,7 @@ export default function LogScreen() {
         />
       )}
 
-      {active && search.isSuccess && results.length === 0 && (
+      {search.isSuccess && results.length === 0 && (
         <EmptyState icon="🕳️" title="No shows found" body="MVP covers NYC, Jul '25 – Jul '26." />
       )}
 
@@ -150,6 +142,9 @@ export default function LogScreen() {
             search.isPlaceholderData && 'opacity-60',
           )}
         >
+          <p className="text-xs font-semibold tracking-[0.14em] text-ink-faint uppercase">
+            {browsing ? 'Recent shows' : 'Results'}
+          </p>
           {results.map((event, i) => (
             <motion.div
               key={event.id}

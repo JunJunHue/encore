@@ -140,13 +140,12 @@ export function useLadder(userId: string | undefined) {
   });
 }
 
-/** Seeded-event search; enabled from 2 chars. */
+/** Seeded-event search. Empty query browses the 20 most recent shows. */
 export function useEventSearch(search: string) {
   const q = search.trim();
   return useQuery({
     queryKey: qk.events(q),
     queryFn: () => fetchEventSearch(q),
-    enabled: q.length >= 2,
     placeholderData: (prev) => prev, // keep old results while typing
   });
 }
