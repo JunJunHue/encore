@@ -35,7 +35,7 @@ export function TasteMatchRing({ pct, size = 176 }: TasteMatchRingProps) {
         <defs>
           <linearGradient id={gradId} x1="0" y1="0" x2="1" y2="1">
             <stop offset="0" stopColor="var(--color-accent)" />
-            <stop offset="1" stopColor="var(--color-accent-magenta)" />
+            <stop offset="1" stopColor="var(--color-accent-2)" />
           </linearGradient>
         </defs>
         <circle

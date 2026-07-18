@@ -34,12 +34,12 @@ function RollingRank({ from, to }: { from: number; to: number }) {
 }
 
 const PARTICLES = [
-  { x: -72, y: -36, c: '#8b5cf6' },
-  { x: 66, y: -42, c: '#ec4899' },
+  { x: -72, y: -36, c: '#0c7a43' },
+  { x: 66, y: -42, c: '#2e9e7b' },
   { x: -48, y: 32, c: '#ffd75e' },
-  { x: 54, y: 38, c: '#38bdf8' },
-  { x: -86, y: -6, c: '#ec4899' },
-  { x: 82, y: 8, c: '#8b5cf6' },
+  { x: 54, y: 38, c: '#d9a123' },
+  { x: -86, y: -6, c: '#2e9e7b' },
+  { x: 82, y: 8, c: '#0c7a43' },
 ];
 
 function ConfettiBurst() {
@@ -132,7 +132,7 @@ export function SlotInReveal({ rows, newLogId, rankPos, mode, onDone }: SlotInRe
         >
           Locked in
         </motion.p>
-        <p className="mt-1 bg-gradient-to-r from-accent to-accent-magenta bg-clip-text text-6xl font-black tracking-tight text-transparent tabular-nums">
+        <p className="mt-1 bg-gradient-to-r from-accent to-accent-2 bg-clip-text text-6xl font-black tracking-tight text-transparent tabular-nums">
           <RollingRank from={rows.length} to={rankPos} />
         </p>
         <motion.p

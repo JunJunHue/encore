@@ -15,8 +15,8 @@ export default defineConfig({
       manifest: {
         name: 'Encore',
         short_name: 'Encore',
-        theme_color: '#0B0B10',
-        background_color: '#0B0B10',
+        theme_color: '#0C5A50',
+        background_color: '#FAF7F0',
         display: 'standalone',
         start_url: '/',
         icons: [{ src: '/favicon.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'any' }],

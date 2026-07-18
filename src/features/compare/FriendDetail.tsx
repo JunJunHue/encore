@@ -83,10 +83,10 @@ function DisagreementCallout({
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.35 }}
-      className="rounded-2xl bg-gradient-to-r from-accent to-accent-magenta p-[1.5px] shadow-glow"
+      className="rounded-2xl bg-gradient-to-r from-accent to-accent-2 p-[1.5px] shadow-glow"
     >
       <div className="rounded-[calc(1rem-1.5px)] bg-surface px-4 py-4">
-        <p className="text-[10px] font-bold tracking-widest text-accent-magenta uppercase">
+        <p className="text-[10px] font-bold tracking-widest text-accent-2 uppercase">
           Biggest disagreement
         </p>
         <p className="mt-1.5 text-xl leading-tight font-bold text-ink">{item.artist}</p>
@@ -117,7 +117,7 @@ function DeltaBadge({ delta }: { delta: number }) {
     <span
       className={cx(
         'rounded-full px-1.5 py-0.5 text-[10px] font-bold tabular-nums',
-        delta >= 4 ? 'bg-accent-magenta/20 text-accent-magenta' : 'bg-surface-2 text-ink-soft',
+        delta >= 4 ? 'bg-accent-2/20 text-accent-2' : 'bg-surface-2 text-ink-soft',
       )}
     >
       Δ{delta}

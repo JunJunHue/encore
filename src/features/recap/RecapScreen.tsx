@@ -125,15 +125,27 @@ export default function RecapScreen() {
       <div
         ref={cardRef}
         className="relative mx-auto flex aspect-[9/16] w-full max-w-[350px] flex-col overflow-hidden rounded-[28px] px-6 py-7"
-        style={{
-          background:
-            'radial-gradient(120% 60% at 85% -10%, rgba(139,92,246,0.35) 0%, rgba(139,92,246,0) 60%), ' +
-            'radial-gradient(100% 50% at 0% 110%, rgba(236,72,153,0.22) 0%, rgba(236,72,153,0) 55%), ' +
-            'linear-gradient(165deg, #0b0b10 0%, #14101f 45%, #22114b 85%, #341368 100%)',
-        }}
+        style={
+          {
+            background:
+              'radial-gradient(120% 60% at 85% -10%, rgba(46,158,123,0.4) 0%, rgba(46,158,123,0) 60%), ' +
+              'radial-gradient(100% 50% at 0% 110%, rgba(255,215,94,0.16) 0%, rgba(255,215,94,0) 55%), ' +
+              'linear-gradient(165deg, #06211d 0%, #0a332d 45%, #0c5a50 85%, #127a64 100%)',
+            // Re-theme the card locally: dark Beli-teal story card with cream ink,
+            // regardless of the app's light theme tokens.
+            '--color-ink': '#faf7f0',
+            '--color-ink-soft': '#bcd6cd',
+            '--color-ink-faint': '#7fa398',
+            '--color-accent': '#8fe3c3',
+            '--color-accent-2': '#ffd75e',
+            '--color-tier-alltimer': '#ffd75e',
+            '--color-tier-great': '#8fe3c3',
+            '--color-tier-good': '#e9b949',
+          } as React.CSSProperties
+        }
       >
         {/* header */}
-        <p className="bg-gradient-to-r from-accent to-accent-magenta bg-clip-text text-xs font-black tracking-[0.3em] text-transparent uppercase">
+        <p className="bg-gradient-to-r from-accent to-accent-2 bg-clip-text text-xs font-black tracking-[0.3em] text-transparent uppercase">
           Encore
         </p>
         <h2 className="mt-3 text-[26px] leading-[1.1] font-black tracking-tight text-ink uppercase">
@@ -195,7 +207,7 @@ export default function RecapScreen() {
             </p>
             {bestMatch && (
               <p className="text-right text-[11px] leading-snug font-bold text-ink">
-                <span className="bg-gradient-to-r from-accent to-accent-magenta bg-clip-text text-lg font-black text-transparent">
+                <span className="bg-gradient-to-r from-accent to-accent-2 bg-clip-text text-lg font-black text-transparent">
                   {bestMatch.pct}%
                 </span>{' '}
                 <span className="text-ink-soft">

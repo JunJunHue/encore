@@ -30,7 +30,7 @@ const RecapScreen = lazy(() => import('@/features/recap/RecapScreen'));
 function Splash() {
   return (
     <div className="flex min-h-dvh items-center justify-center bg-bg">
-      <p className="animate-pulse bg-gradient-to-r from-accent to-accent-magenta bg-clip-text text-3xl font-black tracking-tight text-transparent">
+      <p className="animate-pulse bg-gradient-to-r from-accent to-accent-2 bg-clip-text text-3xl font-black tracking-tight text-transparent">
         Encore
       </p>
     </div>
@@ -173,7 +173,7 @@ function TabShell() {
                   <>
                     <span
                       className={cx(
-                        '-mt-5 flex size-11 items-center justify-center rounded-full bg-gradient-to-r from-accent to-accent-magenta text-white',
+                        '-mt-5 flex size-11 items-center justify-center rounded-full bg-gradient-to-r from-accent to-accent-2 text-white',
                         isActive ? 'shadow-glow' : 'opacity-90 shadow-none',
                       )}
                     >

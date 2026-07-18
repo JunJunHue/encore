@@ -70,7 +70,7 @@ function CloseIcon() {
 function RankSplash() {
   return (
     <div className="flex flex-1 items-center justify-center">
-      <div className="size-3 animate-pulse rounded-full bg-gradient-to-r from-accent to-accent-magenta" />
+      <div className="size-3 animate-pulse rounded-full bg-gradient-to-r from-accent to-accent-2" />
     </div>
   );
 }

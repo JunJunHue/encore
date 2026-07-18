@@ -32,7 +32,7 @@ function MatchBadge({ friendId }: { friendId: string }) {
     );
   }
   return (
-    <span className="bg-gradient-to-r from-accent to-accent-magenta bg-clip-text text-2xl font-black tabular-nums text-transparent">
+    <span className="bg-gradient-to-r from-accent to-accent-2 bg-clip-text text-2xl font-black tabular-nums text-transparent">
       {pct}
       <span className="text-sm font-bold">%</span>
     </span>

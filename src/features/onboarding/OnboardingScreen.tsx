@@ -94,7 +94,7 @@ function RemoveIcon() {
 function OnboardingSplash() {
   return (
     <div className="flex min-h-dvh items-center justify-center">
-      <p className="animate-pulse bg-gradient-to-r from-accent to-accent-magenta bg-clip-text text-3xl font-black tracking-tight text-transparent">
+      <p className="animate-pulse bg-gradient-to-r from-accent to-accent-2 bg-clip-text text-3xl font-black tracking-tight text-transparent">
         Encore
       </p>
     </div>
@@ -131,7 +131,7 @@ function NameStep({ userId }: { userId: string }) {
           animate={{ opacity: 1, y: 0 }}
           transition={SPRING}
         >
-          <p className="bg-gradient-to-r from-accent to-accent-magenta bg-clip-text text-5xl font-black tracking-tight text-transparent">
+          <p className="bg-gradient-to-r from-accent to-accent-2 bg-clip-text text-5xl font-black tracking-tight text-transparent">
             Encore
           </p>
           <p className="mt-2 text-sm text-ink-soft">Every show you&apos;ve seen. Ranked.</p>
@@ -165,7 +165,7 @@ function NameStep({ userId }: { userId: string }) {
         </motion.div>
       </div>
 
-      {error && <p className="pb-3 text-center text-xs text-accent-magenta">{error}</p>}
+      {error && <p className="pb-3 text-center text-xs text-accent-2">{error}</p>}
 
       <div className="flex flex-col gap-2">
         <Button

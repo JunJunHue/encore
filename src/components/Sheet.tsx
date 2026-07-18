@@ -46,7 +46,7 @@ export function Sheet({ open, onClose, title, children, className }: SheetProps)
               if (info.offset.y > 80 || info.velocity.y > 500) onClose();
             }}
           >
-            <div aria-hidden className="mx-auto mb-4 h-1 w-10 rounded-full bg-white/15" />
+            <div aria-hidden className="mx-auto mb-4 h-1 w-10 rounded-full bg-ink/15" />
             {title && <h2 className="mb-3 text-lg font-bold text-ink">{title}</h2>}
             {children}
           </motion.div>

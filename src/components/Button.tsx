@@ -15,7 +15,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const VARIANT_CLASSES: Record<ButtonVariant, string> = {
   primary:
-    'bg-gradient-to-r from-accent to-accent-magenta text-white shadow-glow ' +
+    'bg-gradient-to-r from-accent to-accent-2 text-white shadow-glow ' +
     'active:brightness-110 disabled:from-surface-2 disabled:to-surface-2 disabled:text-ink-faint disabled:shadow-none',
   secondary: 'bg-surface-2 text-ink border border-line active:bg-surface disabled:text-ink-faint',
   ghost: 'bg-transparent text-ink-soft active:bg-surface disabled:text-ink-faint',

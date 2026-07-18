@@ -3,36 +3,36 @@
 @theme {
   --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
 
-  /* Surfaces — "venue black" */
-  --color-bg: #0b0b10;
-  --color-surface: #15151d;
-  --color-surface-2: #1c1c26;
+  /* Surfaces — Beli-style warm cream */
+  --color-bg: #faf7f0;
+  --color-surface: #ffffff;
+  --color-surface-2: #f0ebdf;
 
-  /* Ink (text) palette */
-  --color-ink: #f4f4f8;
-  --color-ink-soft: #b3b3c2;
-  --color-ink-faint: #6f6f7e;
+  /* Ink (text) palette — deep teal-charcoal */
+  --color-ink: #12332f;
+  --color-ink-soft: #4e6a64;
+  --color-ink-faint: #90a09a;
 
   /* Hairline borders */
-  --color-line: rgba(255, 255, 255, 0.08);
+  --color-line: rgba(18, 51, 47, 0.12);
 
-  /* Accent — stage-light violet → magenta */
-  --color-accent: #8b5cf6;
-  --color-accent-magenta: #ec4899;
+  /* Accent — Beli deep teal → green */
+  --color-accent: #0c5a50;
+  --color-accent-2: #2e9e7b;
 
-  /* Tier colors (design-client.md §5) */
-  --color-tier-alltimer: #ffd75e;
-  --color-tier-great: #8b5cf6;
-  --color-tier-good: #38bdf8;
-  --color-tier-fine: #64748b;
-  --color-tier-regret: #7f1d1d;
+  /* Tier colors — Beli score-bubble scale (green = best → red = regret) */
+  --color-tier-alltimer: #0c7a43;
+  --color-tier-great: #57a85c;
+  --color-tier-good: #d9a123;
+  --color-tier-fine: #dd7a3c;
+  --color-tier-regret: #c64b3e;
 
-  --shadow-glow: 0 0 24px rgba(139, 92, 246, 0.35);
+  --shadow-glow: 0 8px 24px rgba(12, 90, 80, 0.28);
 }
 
 html {
   background-color: var(--color-bg);
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
