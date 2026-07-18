@@ -199,6 +199,16 @@ function RankFlow({ eventId }: { eventId: string }) {
         fullScreen
       />
     );
+  } else if (rank.phase === 'duplicate') {
+    content = (
+      <EmptyState
+        icon="🎟️"
+        title="Already on your ladder"
+        body="You've ranked this show before — find it on the ladder to re-rank or add a note."
+        action={<Button onClick={() => navigate('/')}>View ladder</Button>}
+        fullScreen
+      />
+    );
   } else if (rank.phase === 'error' || (rank.phase === 'comparing' && !rank.opponentRow)) {
     content = (
       <EmptyState

@@ -4,11 +4,11 @@
  * rank flow at /rank/:eventId (event seeded through router state so the
  * comparison screen paints instantly).
  */
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { EmptyState, Screen, ShowCard, eventToShowCardData } from '@/components';
-import { useEventSearch, type EventJoin } from '@/lib/hooks';
+import { useEventSearch, useLadder, useSession, type EventJoin } from '@/lib/hooks';
 import { SPRING } from '@/lib/motion';
 import { cx } from '@/lib/cx';
 
@@ -106,12 +106,20 @@ function SkeletonList() {
 
 export default function LogScreen() {
   const navigate = useNavigate();
+  const { userId } = useSession();
   const [text, setText] = useState('');
   const debounced = useDebouncedValue(text, 200);
   const search = useEventSearch(debounced);
+  const ladderQuery = useLadder(userId);
+
+  // Already-ranked shows can't be selected again — same rule Discover uses.
+  const loggedEventIds = useMemo(
+    () => new Set((ladderQuery.data ?? []).map((row) => row.event_id)),
+    [ladderQuery.data],
+  );
 
   const browsing = debounced.trim().length === 0;
-  const results: EventJoin[] = search.data ?? [];
+  const results: EventJoin[] = (search.data ?? []).filter((event) => !loggedEventIds.has(event.id));
 
   const openRankFlow = (event: EventJoin) => {
     navigate(`/rank/${event.id}`, { state: { event } });

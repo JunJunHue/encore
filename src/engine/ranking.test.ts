@@ -147,16 +147,6 @@ describe('too_different handling', () => {
     expect(res.scoreUpdates).toHaveLength(0);
   });
 
-  it('never offers a pivot from the challenger’s own event', () => {
-    const base = ladderOf([1500]);
-    base.entries[0]!.eventId = 'evt-shared';
-    const s = startInsertion(USER, challenger('night2', { eventId: 'evt-shared' }), base);
-    expect(s.phase).toBe('done'); // sole pivot ineligible → immediate provisional landing
-    const res = finishInsertion(s);
-    expect(res.placement).toBe('provisional');
-    expect(res.index).toBe(1);
-    expect(res.comparisonsToAppend).toHaveLength(0);
-  });
 });
 
 describe('scores', () => {
@@ -312,9 +302,18 @@ describe('replay from log', () => {
 });
 
 describe('maintenance & errors', () => {
-  it('duplicate showId throws DuplicateShowError', () => {
-    const base = ladderOf([1600, 1550]);
-    expect(() => startInsertion(USER, challenger('s1'), base)).toThrow(DuplicateShowError);
+  it('duplicate eventId throws DuplicateShowError, even with a fresh showId', () => {
+    // Real callers always mint a brand-new showId per session — eventId is the
+    // only identity that can actually collide, so that's what must be checked.
+    const base = ladderOf([1600, 1550]); // eventIds evt-s0, evt-s1
+    const dup = challenger('brand-new-uuid', { eventId: 'evt-s1' });
+    expect(() => startInsertion(USER, dup, base)).toThrow(DuplicateShowError);
+  });
+
+  it('a fresh eventId does not throw, even if it happens to reuse a showId', () => {
+    const base = ladderOf([1600, 1550]); // showIds s0, s1
+    const notDup = challenger('s1', { eventId: 'evt-brand-new' });
+    expect(() => startInsertion(USER, notDup, base)).not.toThrow();
   });
 
   it('finishInsertion before done throws', () => {

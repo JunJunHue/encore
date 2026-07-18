@@ -74,7 +74,8 @@ function isEligiblePivot(s: InsertionSession, index: number): boolean {
   const e = s.ladder.entries[index];
   if (!e) return false;
   if (s.skipped.includes(e.showId)) return false;
-  // never compare a show to itself / another night of the same event
+  // defensive: startInsertion already rejects a colliding eventId before this
+  // ever runs, but never offer the challenger's own event as its own pivot.
   if (e.eventId === s.challenger.eventId) return false;
   return true;
 }
@@ -119,8 +120,10 @@ export function startInsertion(
   ladder: Ladder,
   kind: SessionKind = 'insertion',
 ): InsertionSession {
-  if (ladder.entries.some((e) => e.showId === challenger.showId)) {
-    throw new DuplicateShowError(challenger.showId);
+  // Identity for "already ranked" is the underlying event, not showId — callers
+  // always mint a fresh showId per session, so a showId collision can't happen.
+  if (ladder.entries.some((e) => e.eventId === challenger.eventId)) {
+    throw new DuplicateShowError(challenger.eventId);
   }
   return settle({
     userId,

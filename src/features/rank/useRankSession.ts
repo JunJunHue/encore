@@ -18,13 +18,19 @@ import {
   type EngineScoreUpdate,
 } from '@/lib/persist';
 import type { EventJoin, LadderRow } from '@/lib/hooks';
-import { finishInsertion, getNextComparison, recordChoice, startInsertion } from '@/engine/ranking';
+import {
+  DuplicateShowError,
+  finishInsertion,
+  getNextComparison,
+  recordChoice,
+  startInsertion,
+} from '@/engine/ranking';
 import type { ComparisonPrompt, InsertionSession } from '@/engine/ranking';
 import { eventToChallenger, ladderToRows, mapById, rowsToLadder } from './engineAdapter';
 
 export type RankMode = 'insertion' | 'backfill';
 export type RankOutcome = 'challenger' | 'opponent' | 'too_different';
-export type RankPhase = 'boot' | 'comparing' | 'reveal' | 'enrich' | 'error';
+export type RankPhase = 'boot' | 'comparing' | 'reveal' | 'enrich' | 'error' | 'duplicate';
 
 const DRAFT_KEY = 'encore:rank-draft';
 /** How long the winner-glow beat plays before the next opponent slides in. */
@@ -229,8 +235,13 @@ export function useRankSession({ userId, eventId, mode, event, ladderRows }: Use
           rows,
         });
       } catch (err) {
-        console.error('[encore] failed to start ranking session:', err);
-        setPhase('error');
+        if (err instanceof DuplicateShowError) {
+          clearDraft();
+          setPhase('duplicate');
+        } else {
+          console.error('[encore] failed to start ranking session:', err);
+          setPhase('error');
+        }
         return;
       }
     }
