@@ -6,7 +6,7 @@
 import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Avatar, Button, EmptyState, Screen, formatShowDate } from '@/components';
+import { Avatar, Button, EmptyState, ScoreBubble, Screen, displayScore, formatShowDate } from '@/components';
 import { useLadder, useProfile, useSession, useSharedShows } from '@/lib/hooks';
 import { cx } from '@/lib/cx';
 import {
@@ -231,6 +231,41 @@ export function FriendDetail({ friendId }: { friendId: string }) {
               body="Log more shows — the ones you both saw will show up here."
               action={<GoLogButton />}
             />
+          )}
+
+          {/* their full ladder — visible even with zero overlap */}
+          {(friendLadderQuery.data ?? []).length > 0 && (
+            <section className="pb-8">
+              <h2 className="mb-1 text-base font-bold text-ink">{name}&rsquo;s ladder</h2>
+              <ul>
+                {(friendLadderQuery.data ?? []).map((row) => {
+                  const ev = row.events;
+                  const headliner = ev?.event_artists
+                    ?.slice()
+                    .sort((a, b) => a.billing_order - b.billing_order)[0]?.artists?.name;
+                  return (
+                    <li key={row.id} className="flex items-center gap-3 border-b border-line py-2.5">
+                      <span className="w-7 shrink-0 text-right text-sm font-bold tabular-nums text-ink-faint">
+                        {row.rank_pos}
+                      </span>
+                      <div className="min-w-0 flex-1">
+                        <p className="truncate text-sm font-semibold text-ink">
+                          {headliner ?? ev?.title ?? 'Unknown show'}
+                        </p>
+                        <p className="truncate text-xs text-ink-faint">
+                          {ev?.venues?.name ?? '—'}
+                          {ev ? ` · ${formatShowDate(ev.event_date)}` : ''}
+                        </p>
+                      </div>
+                      <ScoreBubble
+                        score={displayScore(row.rank_pos, (friendLadderQuery.data ?? []).length)}
+                        size="sm"
+                      />
+                    </li>
+                  );
+                })}
+              </ul>
+            </section>
           )}
         </>
       )}

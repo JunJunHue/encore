@@ -127,6 +127,24 @@ export async function fetchFriends(userId: string): Promise<Profile[]> {
   return ids.flatMap((id) => byId.get(id) ?? []);
 }
 
+/** Every profile on Encore except mine, newest first, with a logged-show count. */
+export interface Person extends Profile {
+  show_count: number;
+}
+
+export async function fetchPeople(userId: string): Promise<Person[]> {
+  const { data, error } = await supabase
+    .from('profiles')
+    .select('*, set_logs(count)')
+    .neq('id', userId)
+    .order('created_at', { ascending: false });
+  if (error) throw error;
+  return (data ?? []).map((p) => {
+    const { set_logs, ...profile } = p as Profile & { set_logs: { count: number }[] };
+    return { ...profile, show_count: set_logs?.[0]?.count ?? 0 };
+  });
+}
+
 export async function fetchSharedShows(userA: string, userB: string): Promise<SharedShowRow[]> {
   const { data, error } = await supabase.rpc('shared_shows', { user_a: userA, user_b: userB });
   if (error) throw error;
@@ -176,6 +194,14 @@ export function useFriends(userId: string | undefined) {
   return useQuery({
     queryKey: qk.friends(userId ?? 'anonymous'),
     queryFn: () => fetchFriends(userId as string),
+    enabled: !!userId,
+  });
+}
+
+export function usePeople(userId: string | undefined) {
+  return useQuery({
+    queryKey: qk.people(userId ?? 'anonymous'),
+    queryFn: () => fetchPeople(userId as string),
     enabled: !!userId,
   });
 }

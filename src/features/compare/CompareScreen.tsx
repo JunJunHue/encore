@@ -8,7 +8,7 @@ import { useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Avatar, EmptyState, Screen } from '@/components';
-import { useFriends, useSession, useSharedShows } from '@/lib/hooks';
+import { useFriends, usePeople, useSession, useSharedShows } from '@/lib/hooks';
 import type { Profile } from '@/lib/auth';
 import { matchPct } from './matchModel';
 import { FriendDetail } from './FriendDetail';
@@ -77,7 +77,11 @@ function FriendRow({ friend, index }: { friend: Profile; index: number }) {
 function FriendsIndex() {
   const { userId } = useSession();
   const friendsQuery = useFriends(userId);
+  const peopleQuery = usePeople(userId);
   const friends = friendsQuery.data ?? [];
+  const friendIds = new Set(friends.map((f) => f.id));
+  // Everyone else on Encore — real signups on the deployed URL land here.
+  const others = (peopleQuery.data ?? []).filter((p) => !friendIds.has(p.id));
 
   return (
     <Screen title="Compare" subtitle="how your taste stacks up">
@@ -87,18 +91,32 @@ function FriendsIndex() {
             <li key={i} className="h-[76px] animate-pulse rounded-2xl bg-surface" />
           ))}
         </ul>
-      ) : friends.length === 0 ? (
+      ) : friends.length === 0 && others.length === 0 ? (
         <EmptyState
           icon="👯"
-          title="No friends yet"
-          body="Friends appear here automatically — compare ladders and find your taste twin."
+          title="No one else here yet"
+          body="Every Encore user shows up here automatically — compare ladders and find your taste twin."
         />
       ) : (
-        <ul className="flex flex-col gap-3 pb-6">
-          {friends.map((f, i) => (
-            <FriendRow key={f.id} friend={f} index={i} />
-          ))}
-        </ul>
+        <>
+          <ul className="flex flex-col gap-3 pb-6">
+            {friends.map((f, i) => (
+              <FriendRow key={f.id} friend={f} index={i} />
+            ))}
+          </ul>
+          {others.length > 0 && (
+            <section className="pb-6">
+              <h2 className="mb-3 text-[10px] font-semibold tracking-[0.14em] text-ink-faint uppercase">
+                Everyone on Encore
+              </h2>
+              <ul className="flex flex-col gap-3">
+                {others.map((p, i) => (
+                  <FriendRow key={p.id} friend={p} index={friends.length + i} />
+                ))}
+              </ul>
+            </section>
+          )}
+        </>
       )}
     </Screen>
   );
