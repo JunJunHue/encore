@@ -24,6 +24,7 @@ const RankFlowScreen = lazy(() => import('@/features/rank/RankFlowScreen'));
 const LadderScreen = lazy(() => import('@/features/ladder/LadderScreen'));
 const CompareScreen = lazy(() => import('@/features/compare/CompareScreen'));
 const RecapScreen = lazy(() => import('@/features/recap/RecapScreen'));
+const DiscoverScreen = lazy(() => import('@/features/discover/DiscoverScreen'));
 
 // ---------- splash / error ----------
 
@@ -103,7 +104,7 @@ function AuthGate() {
 
 // ---------- bottom tab bar shell ----------
 
-function TabIcon({ name }: { name: 'ladder' | 'log' | 'compare' }) {
+function TabIcon({ name }: { name: 'ladder' | 'log' | 'compare' | 'discover' }) {
   const paths: Record<typeof name, ReactNode> = {
     ladder: (
       <>
@@ -124,6 +125,12 @@ function TabIcon({ name }: { name: 'ladder' | 'log' | 'compare' }) {
         <circle cx="16.5" cy="9.5" r="2.75" />
         <path d="M2.5 19c.8-3 3-4.5 5.5-4.5S12.7 16 13.5 19" />
         <path d="M14.5 18.5c.6-2.2 2.2-3.5 4-3.5 1.4 0 2.6.7 3.4 2" />
+      </>
+    ),
+    discover: (
+      <>
+        <circle cx="12" cy="12" r="8" />
+        <path d="M15 9l-2 5-5 2 2-5z" />
       </>
     ),
   };
@@ -147,6 +154,7 @@ function TabIcon({ name }: { name: 'ladder' | 'log' | 'compare' }) {
 const TABS = [
   { to: '/', label: 'Ladder', icon: 'ladder' },
   { to: '/log', label: 'Log', icon: 'log' },
+  { to: '/discover', label: 'Discover', icon: 'discover' },
   { to: '/compare', label: 'Compare', icon: 'compare' },
 ] as const;
 
@@ -209,6 +217,7 @@ const router = createBrowserRouter([
         children: [
           { path: '/', element: <LadderScreen /> },
           { path: '/log', element: <LogScreen /> },
+          { path: '/discover', element: <DiscoverScreen /> },
           { path: '/compare/:friendId?', element: <CompareScreen /> },
           { path: '/recap', element: <RecapScreen /> },
         ],

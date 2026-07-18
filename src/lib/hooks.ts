@@ -100,6 +100,18 @@ export async function fetchEventSearch(search: string): Promise<EventSearchRow[]
   return data ?? [];
 }
 
+/** Full seeded catalog, most recent first — the candidate pool for Discover. */
+export async function fetchCatalog(): Promise<EventJoin[]> {
+  const { data, error } = await supabase
+    .from('events')
+    .select(EVENT_SELECT)
+    .order('event_date', { ascending: false })
+    .limit(200)
+    .returns<EventJoin[]>();
+  if (error) throw error;
+  return data ?? [];
+}
+
 export async function fetchFriends(userId: string): Promise<Profile[]> {
   const { data: follows, error } = await supabase
     .from('follows')
@@ -147,6 +159,15 @@ export function useEventSearch(search: string) {
     queryKey: qk.events(q),
     queryFn: () => fetchEventSearch(q),
     placeholderData: (prev) => prev, // keep old results while typing
+  });
+}
+
+/** Full seeded catalog — static seed data, so a longer staleTime than the default. */
+export function useCatalog() {
+  return useQuery({
+    queryKey: qk.catalog(),
+    queryFn: fetchCatalog,
+    staleTime: 5 * 60_000,
   });
 }
 

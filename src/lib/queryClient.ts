@@ -16,6 +16,7 @@ export const qk = {
   profile: (userId: string) => ['profile', userId] as const,
   ladder: (userId: string) => ['ladder', userId] as const,
   events: (search: string) => ['events', search] as const,
+  catalog: () => ['catalog'] as const,
   friends: (userId: string) => ['friends', userId] as const,
   sharedShows: (userA: string, userB: string) => ['shared-shows', userA, userB] as const,
 };
